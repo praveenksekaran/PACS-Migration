@@ -3,6 +3,13 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+  optimizeDeps: {
+    exclude: [
+      '@cornerstonejs/dicom-image-loader',
+      '@cornerstonejs/core',
+      '@cornerstonejs/tools',
+    ],
+  },
   build: {
     outDir: '../dicomweb-viewer/public',
     emptyOutDir: true,
