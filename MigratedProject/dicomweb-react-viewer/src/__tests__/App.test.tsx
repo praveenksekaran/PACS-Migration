@@ -5,6 +5,15 @@ import { render, screen, waitFor } from '@testing-library/react'
 vi.mock('../lib/cornerstone', () => ({
   initCornerstone: vi.fn(() => Promise.resolve()),
 }))
+// Mock CornerstoneViewport — it uses WebGL/RenderingEngine not available in jsdom
+vi.mock('../components/CornerstoneViewport', () => ({
+  default: () => <div data-testid="cornerstone-viewport" />,
+}))
+// Mock cornerstone core so the import chain doesn't fail
+vi.mock('@cornerstonejs/core', () => ({
+  RenderingEngine: vi.fn(),
+  Enums: { ViewportType: { STACK: 'stack' } },
+}))
 
 import App from '../App'
 import { initCornerstone } from '../lib/cornerstone'

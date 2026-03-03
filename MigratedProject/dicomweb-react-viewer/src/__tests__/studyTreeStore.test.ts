@@ -3,8 +3,10 @@ import { describe, it, expect, beforeEach, vi } from 'vitest'
 vi.mock('../api/dicomWebClient', () => ({
   searchInstances: vi.fn(),
 }))
+vi.mock('../config', () => ({ API_URL: 'http://test-server' }))
 
 import { useStudyTreeStore } from '../store/studyTreeStore'
+import { useViewerStore } from '../store/viewerStore'
 import { searchInstances } from '../api/dicomWebClient'
 import type { QRResult } from '../types/dicom'
 
@@ -121,6 +123,33 @@ describe('studyTreeStore.selectInstance()', () => {
   it('sets selectedInstanceId', () => {
     useStudyTreeStore.getState().selectInstance('sop-1')
     expect(useStudyTreeStore.getState().selectedInstanceId).toBe('sop-1')
+  })
+
+  it('builds WADO-URI imageIds for all instances in the series and calls setActiveStack', async () => {
+    useViewerStore.setState({ imageIds: [], currentIndex: 0 })
+    await useStudyTreeStore.getState().addSeries(series1)
+
+    useStudyTreeStore.getState().selectInstance('sop-1')
+
+    const { imageIds, currentIndex } = useViewerStore.getState()
+    expect(imageIds).toHaveLength(3)
+    expect(imageIds[0]).toBe(
+      'wadouri:http://test-server/wadouri?studyUID=1.2.3&seriesUID=4.5.6&objectUID=sop-1'
+    )
+    expect(imageIds[1]).toBe(
+      'wadouri:http://test-server/wadouri?studyUID=1.2.3&seriesUID=4.5.6&objectUID=sop-2'
+    )
+    expect(currentIndex).toBe(0)
+  })
+
+  it('sets the correct startIndex when a non-first instance is selected', async () => {
+    useViewerStore.setState({ imageIds: [], currentIndex: 0 })
+    await useStudyTreeStore.getState().addSeries(series1)
+
+    useStudyTreeStore.getState().selectInstance('sop-3')
+
+    const { currentIndex } = useViewerStore.getState()
+    expect(currentIndex).toBe(2)
   })
 })
 

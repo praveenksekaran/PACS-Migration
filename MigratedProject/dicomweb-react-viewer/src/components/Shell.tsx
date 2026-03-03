@@ -3,6 +3,7 @@ import Toolbar from './Toolbar'
 import StudyTree from './StudyTree'
 import StatusBar from './StatusBar'
 import QRModal from './QRModal'
+import Viewer2D from './Viewer2D'
 
 export default function Shell() {
   return (
@@ -13,7 +14,9 @@ export default function Shell() {
         <div style={{ width: 260, flexShrink: 0, borderRight: '1px solid #ccc', overflow: 'auto' }}>
           <StudyTree />
         </div>
-        <div data-testid="viewer-canvas" style={{ flex: 1, background: '#000' }} />
+        <div data-testid="viewer-canvas" style={{ flex: 1, position: 'relative' }}>
+          <Viewer2D />
+        </div>
       </div>
       <StatusBar />
       <QRModal />

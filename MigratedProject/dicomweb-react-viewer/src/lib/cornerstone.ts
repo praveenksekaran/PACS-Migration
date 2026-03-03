@@ -1,4 +1,10 @@
-// Phase 1 stub — real cornerstone3D init will be wired in Phase 3/4
+import * as cornerstoneCore from '@cornerstonejs/core'
+import * as dicomImageLoader from '@cornerstonejs/dicom-image-loader'
+import * as cornerstoneTools from '@cornerstonejs/tools'
+
 export async function initCornerstone(): Promise<void> {
-  return Promise.resolve()
+  await cornerstoneCore.init()
+  dicomImageLoader.init({ maxWebWorkers: 1 })
+  dicomImageLoader.wadouri.register(cornerstoneCore)
+  await cornerstoneTools.init()
 }

@@ -2,6 +2,8 @@ import { create } from 'zustand'
 import type { TreeNode, QRResult } from '../types/dicom'
 import { searchInstances } from '../api/dicomWebClient'
 import { getTagValue } from '../utils/dicomUtils'
+import { API_URL } from '../config'
+import { useViewerStore } from './viewerStore'
 
 // DICOM tag constants
 const TAG = {
@@ -108,7 +110,26 @@ export const useStudyTreeStore = create<StudyTreeState>((set, get) => ({
     })
   },
 
-  selectInstance: (sopUid) => set({ selectedInstanceId: sopUid }),
+  selectInstance: (sopUid) => {
+    set({ selectedInstanceId: sopUid })
+    const { nodes } = get()
+    // Find the series node that contains this instance
+    for (const patient of nodes) {
+      for (const study of patient.children) {
+        for (const series of study.children) {
+          const instIndex = series.children.findIndex((n) => n.id === sopUid)
+          if (instIndex === -1) continue
+          // Build WADO-URI imageIds for every instance in this series (already sorted)
+          const imageIds = series.children.map((inst) => {
+            const { studyUid, seriesUid, sopUid: sop } = inst.data
+            return `wadouri:${API_URL}/wadouri?studyUID=${studyUid}&seriesUID=${seriesUid}&objectUID=${sop}`
+          })
+          useViewerStore.getState().setActiveStack(imageIds, instIndex)
+          return
+        }
+      }
+    }
+  },
 
   clear: () => set({ nodes: [], selectedInstanceId: null }),
 }))
