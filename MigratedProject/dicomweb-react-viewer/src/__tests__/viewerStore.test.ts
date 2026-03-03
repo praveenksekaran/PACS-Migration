@@ -7,6 +7,8 @@ const INITIAL = {
   overlayText: { topLeft: '', topRight: '', bottomLeft: '', bottomRight: '' },
   windowCenter: null,
   windowWidth: null,
+  viewportLayout: 'stack' as const,
+  volumeId: null,
 }
 
 beforeEach(() => {
@@ -32,6 +34,12 @@ describe('viewerStore initial state', () => {
   })
   it('windowWidth is null by default', () => {
     expect(useViewerStore.getState().windowWidth).toBeNull()
+  })
+  it('viewportLayout defaults to stack', () => {
+    expect(useViewerStore.getState().viewportLayout).toBe('stack')
+  })
+  it('volumeId is null by default', () => {
+    expect(useViewerStore.getState().volumeId).toBeNull()
   })
 })
 
@@ -82,6 +90,30 @@ describe('viewerStore.setActiveStack()', () => {
     useViewerStore.setState({ windowCenter: 40, windowWidth: 400 })
     useViewerStore.getState().setActiveStack(['wad://1'], 0)
     expect(useViewerStore.getState().windowWidth).toBeNull()
+  })
+})
+
+describe('viewerStore.setLayout()', () => {
+  it('switches viewportLayout to mpr', () => {
+    useViewerStore.getState().setLayout('mpr')
+    expect(useViewerStore.getState().viewportLayout).toBe('mpr')
+  })
+  it('switches viewportLayout back to stack', () => {
+    useViewerStore.getState().setLayout('mpr')
+    useViewerStore.getState().setLayout('stack')
+    expect(useViewerStore.getState().viewportLayout).toBe('stack')
+  })
+})
+
+describe('viewerStore.setActiveStack() volumeId', () => {
+  it('sets volumeId when imageIds are provided', () => {
+    useViewerStore.getState().setActiveStack(['wad://1', 'wad://2'], 0)
+    expect(useViewerStore.getState().volumeId).toBe('cornerstoneStreamingImageVolume:viewer-volume')
+  })
+  it('sets volumeId to null when imageIds is empty', () => {
+    useViewerStore.setState({ volumeId: 'cornerstoneStreamingImageVolume:viewer-volume' })
+    useViewerStore.getState().setActiveStack([], 0)
+    expect(useViewerStore.getState().volumeId).toBeNull()
   })
 })
 
