@@ -1,12 +1,15 @@
 import { useUIStore } from '../store/uiStore'
 import { useToolStore } from '../store/toolStore'
 import type { ActiveTool, ViewportAction } from '../store/toolStore'
+import { useViewerStore } from '../store/viewerStore'
 
 export default function Toolbar() {
   const openQR = useUIStore((s) => s.openQR)
   const activeTool = useToolStore((s) => s.activeTool)
   const setActiveTool = useToolStore((s) => s.setActiveTool)
   const triggerAction = useToolStore((s) => s.triggerAction)
+  const annotationVisible = useViewerStore((s) => s.annotationVisible)
+  const toggleAnnotation = useViewerStore((s) => s.toggleAnnotation)
 
   const toolBtn = (testId: string, label: string, tool: ActiveTool) => (
     <button
@@ -41,6 +44,15 @@ export default function Toolbar() {
       {actionBtn('toolbar-btn-fliph', 'Flip H', 'FlipH')}
       {actionBtn('toolbar-btn-flipv', 'Flip V', 'FlipV')}
       {actionBtn('toolbar-btn-invert', 'Invert', 'Invert')}
+      <span style={{ width: 1, background: '#ccc', margin: '0 4px' }} />
+      <button
+        data-testid="toolbar-btn-annotation"
+        onClick={toggleAnnotation}
+        title={annotationVisible ? 'Show Original' : 'Annotation'}
+        style={{ fontWeight: annotationVisible ? 'bold' : 'normal' }}
+      >
+        {annotationVisible ? 'Show Original' : 'Annotation'}
+      </button>
     </div>
   )
 }

@@ -3,10 +3,24 @@ import { render, screen, fireEvent } from '@testing-library/react'
 import Toolbar from '../components/Toolbar'
 import { useUIStore } from '../store/uiStore'
 import { useToolStore } from '../store/toolStore'
+import { useViewerStore } from '../store/viewerStore'
+
+const WADORS_1 = 'wadors:http://localhost:5001/rs/studies/STU1/series/SER1/instances/SOP1/frames/1'
 
 beforeEach(() => {
   useUIStore.setState({ isQROpen: false })
   useToolStore.setState({ activeTool: 'Wwwl', pendingAction: null })
+  useViewerStore.setState({
+    imageIds: [],
+    baseImageIds: [],
+    annotationVisible: false,
+    currentIndex: 0,
+    overlayText: { topLeft: '', topRight: '', bottomLeft: '', bottomRight: '' },
+    windowCenter: null,
+    windowWidth: null,
+    viewportLayout: 'stack',
+    volumeId: null,
+  })
 })
 
 describe('Toolbar', () => {
@@ -93,5 +107,36 @@ describe('Toolbar', () => {
     render(<Toolbar />)
     fireEvent.click(screen.getByTestId('toolbar-btn-invert'))
     expect(useToolStore.getState().pendingAction).toBe('Invert')
+  })
+
+  // ── Phase 6: Annotation button ────────────────────────────────────────────
+
+  it('renders the Annotation button', () => {
+    render(<Toolbar />)
+    expect(screen.getByTestId('toolbar-btn-annotation')).toBeInTheDocument()
+  })
+
+  it('Annotation button shows "Annotation" label when annotation is off', () => {
+    render(<Toolbar />)
+    expect(screen.getByTestId('toolbar-btn-annotation')).toHaveTextContent('Annotation')
+  })
+
+  it('Annotation button shows "Show Original" label when annotation is on', () => {
+    useViewerStore.setState({ annotationVisible: true })
+    render(<Toolbar />)
+    expect(screen.getByTestId('toolbar-btn-annotation')).toHaveTextContent('Show Original')
+  })
+
+  it('clicking Annotation button calls toggleAnnotation', () => {
+    useViewerStore.setState({ baseImageIds: [WADORS_1], imageIds: [WADORS_1] })
+    render(<Toolbar />)
+    fireEvent.click(screen.getByTestId('toolbar-btn-annotation'))
+    expect(useViewerStore.getState().annotationVisible).toBe(true)
+  })
+
+  it('Annotation button is bold when annotationVisible is true', () => {
+    useViewerStore.setState({ annotationVisible: true })
+    render(<Toolbar />)
+    expect(screen.getByTestId('toolbar-btn-annotation')).toHaveStyle({ fontWeight: 'bold' })
   })
 })

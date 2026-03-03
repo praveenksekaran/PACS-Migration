@@ -1,14 +1,21 @@
 import { describe, it, expect, beforeEach } from 'vitest'
-import { useViewerStore } from '../store/viewerStore'
+import { useViewerStore, wadorsToWadouri } from '../store/viewerStore'
+
+const WADORS_1 = 'wadors:http://localhost:5001/rs/studies/STU1/series/SER1/instances/SOP1/frames/1'
+const WADORS_2 = 'wadors:http://localhost:5001/rs/studies/STU1/series/SER1/instances/SOP2/frames/1'
+const WADOURI_1 = 'wadouri:/wadouri?studyUID=STU1&seriesUID=SER1&objectUID=SOP1'
+const WADOURI_2 = 'wadouri:/wadouri?studyUID=STU1&seriesUID=SER1&objectUID=SOP2'
 
 const INITIAL = {
   imageIds: [],
+  baseImageIds: [],
   currentIndex: 0,
   overlayText: { topLeft: '', topRight: '', bottomLeft: '', bottomRight: '' },
   windowCenter: null,
   windowWidth: null,
   viewportLayout: 'stack' as const,
   volumeId: null,
+  annotationVisible: false,
 }
 
 beforeEach(() => {
@@ -125,5 +132,86 @@ describe('viewerStore.updateOverlayText()', () => {
     expect(overlayText.bottomRight).toBe('WL:40 WW:400')
     expect(overlayText.topRight).toBe('')  // unchanged
     expect(overlayText.bottomLeft).toBe('')  // unchanged
+  })
+})
+
+// ── Phase 6: Annotation Overlay ────────────────────────────────────────────
+
+describe('wadorsToWadouri()', () => {
+  it('converts a wadors imageId to wadouri scheme', () => {
+    expect(wadorsToWadouri(WADORS_1)).toBe(WADOURI_1)
+  })
+
+  it('returns the original string unchanged for unrecognised formats', () => {
+    expect(wadorsToWadouri('unknown://foo')).toBe('unknown://foo')
+  })
+})
+
+describe('viewerStore initial state (Phase 6)', () => {
+  it('annotationVisible defaults to false', () => {
+    expect(useViewerStore.getState().annotationVisible).toBe(false)
+  })
+
+  it('baseImageIds defaults to empty array', () => {
+    expect(useViewerStore.getState().baseImageIds).toEqual([])
+  })
+})
+
+describe('viewerStore.setActiveStack() (Phase 6)', () => {
+  it('saves wadors imageIds into baseImageIds', () => {
+    useViewerStore.getState().setActiveStack([WADORS_1, WADORS_2], 0)
+    expect(useViewerStore.getState().baseImageIds).toEqual([WADORS_1, WADORS_2])
+  })
+
+  it('resets annotationVisible to false on new series load', () => {
+    useViewerStore.setState({ annotationVisible: true })
+    useViewerStore.getState().setActiveStack([WADORS_1], 0)
+    expect(useViewerStore.getState().annotationVisible).toBe(false)
+  })
+})
+
+describe('viewerStore.toggleAnnotation()', () => {
+  it('sets annotationVisible to true on first call', () => {
+    useViewerStore.getState().setActiveStack([WADORS_1, WADORS_2], 0)
+    useViewerStore.getState().toggleAnnotation()
+    expect(useViewerStore.getState().annotationVisible).toBe(true)
+  })
+
+  it('sets annotationVisible back to false on second call', () => {
+    useViewerStore.getState().setActiveStack([WADORS_1, WADORS_2], 0)
+    useViewerStore.getState().toggleAnnotation()
+    useViewerStore.getState().toggleAnnotation()
+    expect(useViewerStore.getState().annotationVisible).toBe(false)
+  })
+
+  it('replaces imageIds with wadouri scheme when turning ON', () => {
+    useViewerStore.getState().setActiveStack([WADORS_1, WADORS_2], 0)
+    useViewerStore.getState().toggleAnnotation()
+    expect(useViewerStore.getState().imageIds).toEqual([WADOURI_1, WADOURI_2])
+  })
+
+  it('restores wadors imageIds when turning OFF', () => {
+    useViewerStore.getState().setActiveStack([WADORS_1, WADORS_2], 0)
+    useViewerStore.getState().toggleAnnotation()
+    useViewerStore.getState().toggleAnnotation()
+    expect(useViewerStore.getState().imageIds).toEqual([WADORS_1, WADORS_2])
+  })
+
+  it('does not modify baseImageIds during toggle', () => {
+    useViewerStore.getState().setActiveStack([WADORS_1, WADORS_2], 0)
+    useViewerStore.getState().toggleAnnotation()
+    expect(useViewerStore.getState().baseImageIds).toEqual([WADORS_1, WADORS_2])
+  })
+
+  it('is a no-op when no imageIds are loaded', () => {
+    useViewerStore.getState().toggleAnnotation()
+    expect(useViewerStore.getState().annotationVisible).toBe(false)
+    expect(useViewerStore.getState().imageIds).toEqual([])
+  })
+
+  it('does not change currentIndex during toggle', () => {
+    useViewerStore.getState().setActiveStack([WADORS_1, WADORS_2], 1)
+    useViewerStore.getState().toggleAnnotation()
+    expect(useViewerStore.getState().currentIndex).toBe(1)
   })
 })
