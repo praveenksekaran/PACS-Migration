@@ -6,6 +6,8 @@ import { useViewerStore } from '../store/viewerStore'
 beforeEach(() => {
   useViewerStore.setState({
     overlayText: { topLeft: '', topRight: '', bottomLeft: '', bottomRight: '' },
+    windowCenter: null,
+    windowWidth: null,
   })
 })
 
@@ -53,6 +55,20 @@ describe('CornerOverlay', () => {
     })
     render(<CornerOverlay />)
     expect(screen.getByTestId('overlay-bottom-right').textContent).toContain('WL:40 WW:400')
+  })
+
+  it('bottom-right shows live WL and WW when windowCenter and windowWidth are set', () => {
+    useViewerStore.setState({ windowCenter: 40, windowWidth: 400 })
+    render(<CornerOverlay />)
+    const br = screen.getByTestId('overlay-bottom-right').textContent
+    expect(br).toContain('WL: 40')
+    expect(br).toContain('WW: 400')
+  })
+
+  it('bottom-right does not show WL/WW when windowCenter is null', () => {
+    useViewerStore.setState({ windowCenter: null, windowWidth: null })
+    render(<CornerOverlay />)
+    expect(screen.getByTestId('overlay-bottom-right').textContent).not.toContain('WL:')
   })
 
   it('overlay container is absolutely positioned and pointer-events none', () => {

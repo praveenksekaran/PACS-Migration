@@ -5,6 +5,8 @@ const INITIAL = {
   imageIds: [],
   currentIndex: 0,
   overlayText: { topLeft: '', topRight: '', bottomLeft: '', bottomRight: '' },
+  windowCenter: null,
+  windowWidth: null,
 }
 
 beforeEach(() => {
@@ -24,6 +26,12 @@ describe('viewerStore initial state', () => {
     expect(overlayText.topRight).toBe('')
     expect(overlayText.bottomLeft).toBe('')
     expect(overlayText.bottomRight).toBe('')
+  })
+  it('windowCenter is null by default', () => {
+    expect(useViewerStore.getState().windowCenter).toBeNull()
+  })
+  it('windowWidth is null by default', () => {
+    expect(useViewerStore.getState().windowWidth).toBeNull()
   })
 })
 
@@ -50,6 +58,30 @@ describe('viewerStore.setCurrentIndex()', () => {
     useViewerStore.setState({ imageIds: ['a', 'b', 'c'] })
     useViewerStore.getState().setCurrentIndex(2)
     expect(useViewerStore.getState().currentIndex).toBe(2)
+  })
+})
+
+describe('viewerStore.setWL()', () => {
+  it('sets windowCenter', () => {
+    useViewerStore.getState().setWL(40, 400)
+    expect(useViewerStore.getState().windowCenter).toBe(40)
+  })
+  it('sets windowWidth', () => {
+    useViewerStore.getState().setWL(40, 400)
+    expect(useViewerStore.getState().windowWidth).toBe(400)
+  })
+})
+
+describe('viewerStore.setActiveStack()', () => {
+  it('resets windowCenter to null', () => {
+    useViewerStore.setState({ windowCenter: 40, windowWidth: 400 })
+    useViewerStore.getState().setActiveStack(['wad://1'], 0)
+    expect(useViewerStore.getState().windowCenter).toBeNull()
+  })
+  it('resets windowWidth to null', () => {
+    useViewerStore.setState({ windowCenter: 40, windowWidth: 400 })
+    useViewerStore.getState().setActiveStack(['wad://1'], 0)
+    expect(useViewerStore.getState().windowWidth).toBeNull()
   })
 })
 

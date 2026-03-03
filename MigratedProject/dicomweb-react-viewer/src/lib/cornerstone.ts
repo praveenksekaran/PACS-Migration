@@ -6,5 +6,6 @@ export async function initCornerstone(): Promise<void> {
   await cornerstoneCore.init()
   dicomImageLoader.init({ maxWebWorkers: 1 })
   dicomImageLoader.wadouri.register(cornerstoneCore)
+  dicomImageLoader.wadors.register(cornerstoneCore)
   await cornerstoneTools.init()
 }

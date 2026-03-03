@@ -125,7 +125,7 @@ describe('studyTreeStore.selectInstance()', () => {
     expect(useStudyTreeStore.getState().selectedInstanceId).toBe('sop-1')
   })
 
-  it('builds WADO-URI imageIds for all instances in the series and calls setActiveStack', async () => {
+  it('builds WADO-RS imageIds for all instances in the series and calls setActiveStack', async () => {
     useViewerStore.setState({ imageIds: [], currentIndex: 0 })
     await useStudyTreeStore.getState().addSeries(series1)
 
@@ -134,10 +134,10 @@ describe('studyTreeStore.selectInstance()', () => {
     const { imageIds, currentIndex } = useViewerStore.getState()
     expect(imageIds).toHaveLength(3)
     expect(imageIds[0]).toBe(
-      'wadouri:http://test-server/wadouri?studyUID=1.2.3&seriesUID=4.5.6&objectUID=sop-1'
+      'wadors:http://test-server/rs/studies/1.2.3/series/4.5.6/instances/sop-1/frames/1'
     )
     expect(imageIds[1]).toBe(
-      'wadouri:http://test-server/wadouri?studyUID=1.2.3&seriesUID=4.5.6&objectUID=sop-2'
+      'wadors:http://test-server/rs/studies/1.2.3/series/4.5.6/instances/sop-2/frames/1'
     )
     expect(currentIndex).toBe(0)
   })

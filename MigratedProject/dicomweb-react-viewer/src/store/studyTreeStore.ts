@@ -119,10 +119,10 @@ export const useStudyTreeStore = create<StudyTreeState>((set, get) => ({
         for (const series of study.children) {
           const instIndex = series.children.findIndex((n) => n.id === sopUid)
           if (instIndex === -1) continue
-          // Build WADO-URI imageIds for every instance in this series (already sorted)
+          // Build WADO-RS imageIds for every instance in this series (already sorted)
           const imageIds = series.children.map((inst) => {
             const { studyUid, seriesUid, sopUid: sop } = inst.data
-            return `wadouri:${API_URL}/wadouri?studyUID=${studyUid}&seriesUID=${seriesUid}&objectUID=${sop}`
+            return `wadors:${API_URL}/rs/studies/${studyUid}/series/${seriesUid}/instances/${sop}/frames/1`
           })
           useViewerStore.getState().setActiveStack(imageIds, instIndex)
           return

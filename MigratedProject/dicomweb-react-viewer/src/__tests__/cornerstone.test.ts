@@ -9,6 +9,7 @@ vi.mock('@cornerstonejs/core', () => ({
 vi.mock('@cornerstonejs/dicom-image-loader', () => ({
   init: vi.fn(),
   wadouri: { register: vi.fn() },
+  wadors: { register: vi.fn() },
 }))
 vi.mock('@cornerstonejs/tools', () => ({
   init: vi.fn().mockResolvedValue(undefined),
@@ -45,6 +46,11 @@ describe('initCornerstone', () => {
   it('registers the wadouri loader with cornerstone core', async () => {
     await initCornerstone()
     expect(dicomImageLoader.wadouri.register).toHaveBeenCalledWith(cornerstoneCore)
+  })
+
+  it('registers the wadors loader with cornerstone core', async () => {
+    await initCornerstone()
+    expect(dicomImageLoader.wadors.register).toHaveBeenCalledWith(cornerstoneCore)
   })
 
   it('calls cornerstoneTools.init()', async () => {
