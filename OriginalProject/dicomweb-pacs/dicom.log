@@ -1,1 +1,798 @@
-
+INFO  [02-03-2026 16:39:35:879]: determining input files ...
+INFO  [02-03-2026 16:39:35:879]: checking input files ...
+DEBUG [02-03-2026 16:39:35:879]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\sample1'
+DEBUG [02-03-2026 16:39:35:879]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 16:39:35:879]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:35:879]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 16:39:35:879]: successfully added SOP instance 1.3.46.670589.5.2.10.2156913941.892665339.718742 to the transfer list
+DEBUG [02-03-2026 16:39:35:879]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\sample2'
+DEBUG [02-03-2026 16:39:35:879]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 16:39:35:879]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:35:879]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 16:39:35:879]: successfully added SOP instance 1.3.46.670589.5.2.10.2156913941.892665340.475317 to the transfer list
+DEBUG [02-03-2026 16:39:35:879]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSARAB'
+DEBUG [02-03-2026 16:39:35:879]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 16:39:35:879]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:35:879]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 16:39:35:879]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775772.5726.0 to the transfer list
+DEBUG [02-03-2026 16:39:35:879]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSFREN'
+DEBUG [02-03-2026 16:39:35:879]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 16:39:35:879]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:35:879]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 16:39:35:879]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775772.5720.0 to the transfer list
+DEBUG [02-03-2026 16:39:35:879]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSGERM'
+DEBUG [02-03-2026 16:39:35:879]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 16:39:35:879]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:35:879]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 16:39:35:879]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775772.5723.0 to the transfer list
+DEBUG [02-03-2026 16:39:35:879]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSGREEK'
+DEBUG [02-03-2026 16:39:35:879]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 16:39:35:879]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:35:879]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 16:39:35:879]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775772.5717.0 to the transfer list
+DEBUG [02-03-2026 16:39:35:879]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSH31'
+DEBUG [02-03-2026 16:39:35:879]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 16:39:35:879]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:35:879]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 16:39:35:879]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775771.5702.0 to the transfer list
+DEBUG [02-03-2026 16:39:35:879]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSH32'
+DEBUG [02-03-2026 16:39:35:879]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 16:39:35:894]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:35:894]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 16:39:35:894]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775771.5705.0 to the transfer list
+DEBUG [02-03-2026 16:39:35:894]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSHBRW'
+DEBUG [02-03-2026 16:39:35:894]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 16:39:35:894]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:35:894]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 16:39:35:894]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775772.5732.0 to the transfer list
+DEBUG [02-03-2026 16:39:35:894]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSI2'
+DEBUG [02-03-2026 16:39:35:894]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 16:39:35:894]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:35:894]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 16:39:35:894]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775771.5708.0 to the transfer list
+DEBUG [02-03-2026 16:39:35:894]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSRUSS'
+DEBUG [02-03-2026 16:39:35:894]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 16:39:35:894]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:35:894]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 16:39:35:894]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775772.5729.0 to the transfer list
+DEBUG [02-03-2026 16:39:35:894]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSX1'
+DEBUG [02-03-2026 16:39:35:894]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 16:39:35:894]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:35:894]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 16:39:35:894]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775771.5711.0 to the transfer list
+DEBUG [02-03-2026 16:39:35:894]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSX2'
+DEBUG [02-03-2026 16:39:35:894]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 16:39:35:894]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:35:894]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 16:39:35:894]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775771.5714.0 to the transfer list
+INFO  [02-03-2026 16:39:35:894]: in total, there are 13 SOP instances to be sent, 0 invalid files are ignored
+DEBUG [02-03-2026 16:39:35:894]: preparing presentation context for SOP Class / Transfer Syntax: CTImageStorage / Little Endian Implicit
+DEBUG [02-03-2026 16:39:35:894]: added new presentation context with ID 1
+DEBUG [02-03-2026 16:39:35:894]: preparing presentation context for SOP Class / Transfer Syntax: CTImageStorage / Little Endian Implicit
+DEBUG [02-03-2026 16:39:35:894]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 1
+DEBUG [02-03-2026 16:39:35:894]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 16:39:35:894]: added new presentation context with ID 3
+DEBUG [02-03-2026 16:39:35:894]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 16:39:35:894]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 3
+DEBUG [02-03-2026 16:39:35:894]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 16:39:35:894]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 3
+DEBUG [02-03-2026 16:39:35:894]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 16:39:35:894]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 3
+DEBUG [02-03-2026 16:39:35:894]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 16:39:35:894]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 3
+DEBUG [02-03-2026 16:39:35:894]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 16:39:35:894]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 3
+DEBUG [02-03-2026 16:39:35:894]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 16:39:35:894]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 3
+DEBUG [02-03-2026 16:39:35:894]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 16:39:35:894]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 3
+DEBUG [02-03-2026 16:39:35:894]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 16:39:35:894]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 3
+DEBUG [02-03-2026 16:39:35:894]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 16:39:35:894]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 3
+DEBUG [02-03-2026 16:39:35:894]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 16:39:35:894]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 3
+INFO  [02-03-2026 16:39:35:894]: initializing network ...
+DEBUG [02-03-2026 16:39:35:894]: Configured a total of 2 presentation contexts for SCU
+INFO  [02-03-2026 16:39:35:894]: negotiating network association ...
+INFO  [02-03-2026 16:39:35:894]: Request Parameters:
+INFO  [02-03-2026 16:39:35:894]: ====================== BEGIN A-ASSOCIATE-RQ =====================
+INFO  [02-03-2026 16:39:35:894]: Our Implementation Class UID:      1.2.276.0.7230010.3.0.3.6.8
+INFO  [02-03-2026 16:39:35:894]: Our Implementation Version Name:   OFFIS_DCMTK_368
+INFO  [02-03-2026 16:39:35:894]: Their Implementation Class UID:    
+INFO  [02-03-2026 16:39:35:894]: Their Implementation Version Name: 
+INFO  [02-03-2026 16:39:35:894]: Application Context Name:    1.2.840.10008.3.1.1.1
+INFO  [02-03-2026 16:39:35:894]: Calling Application Name:    DICOMWEB_PACS
+INFO  [02-03-2026 16:39:35:894]: Called Application Name:     DICOMWEB_PACS
+INFO  [02-03-2026 16:39:35:894]: Responding Application Name: 
+INFO  [02-03-2026 16:39:35:894]: Our Max PDU Receive Size:    16384
+INFO  [02-03-2026 16:39:35:894]: Their Max PDU Receive Size:  0
+INFO  [02-03-2026 16:39:35:894]: Presentation Contexts:
+INFO  [02-03-2026 16:39:35:894]:   Context ID:        1 (Proposed)
+INFO  [02-03-2026 16:39:35:894]:     Abstract Syntax: =CTImageStorage
+INFO  [02-03-2026 16:39:35:894]:     Proposed SCP/SCU Role: Default
+INFO  [02-03-2026 16:39:35:894]:     Proposed Transfer Syntax(es):
+INFO  [02-03-2026 16:39:35:894]:       =LittleEndianExplicit
+INFO  [02-03-2026 16:39:35:894]:       =BigEndianExplicit
+INFO  [02-03-2026 16:39:35:894]:       =LittleEndianImplicit
+INFO  [02-03-2026 16:39:35:894]:   Context ID:        3 (Proposed)
+INFO  [02-03-2026 16:39:35:894]:     Abstract Syntax: =SecondaryCaptureImageStorage
+INFO  [02-03-2026 16:39:35:894]:     Proposed SCP/SCU Role: Default
+INFO  [02-03-2026 16:39:35:894]:     Proposed Transfer Syntax(es):
+INFO  [02-03-2026 16:39:35:894]:       =LittleEndianExplicit
+INFO  [02-03-2026 16:39:35:894]:       =BigEndianExplicit
+INFO  [02-03-2026 16:39:35:894]:       =LittleEndianImplicit
+INFO  [02-03-2026 16:39:35:894]: Requested Extended Negotiation: none
+INFO  [02-03-2026 16:39:35:894]: Accepted Extended Negotiation:  none
+INFO  [02-03-2026 16:39:35:894]: Requested User Identity Negotiation: none
+INFO  [02-03-2026 16:39:35:894]: User Identity Negotiation Response:  none
+INFO  [02-03-2026 16:39:35:894]: ======================= END A-ASSOCIATE-RQ ======================
+INFO  [02-03-2026 16:39:35:894]: Requesting Association
+DEBUG [02-03-2026 16:39:35:894]: setting network send timeout to 60 seconds
+DEBUG [02-03-2026 16:39:35:894]: setting network receive timeout to 60 seconds
+DEBUG [02-03-2026 16:39:35:894]: Constructing Associate RQ PDU
+DEBUG [02-03-2026 16:39:35:894]: PDU Type: Associate Accept, PDU Length: 213 + 6 bytes PDU header
+DEBUG [02-03-2026 16:39:35:894]:   02  00  00  00  00  d5  00  01  00  00  44  49  43  4f  4d  57
+DEBUG [02-03-2026 16:39:35:894]:   45  42  5f  50  41  43  53  20  20  20  44  49  43  4f  4d  57
+DEBUG [02-03-2026 16:39:35:894]:   45  42  5f  50  41  43  53  20  20  20  00  00  00  00  00  00
+DEBUG [02-03-2026 16:39:35:894]:   00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00
+DEBUG [02-03-2026 16:39:35:894]:   00  00  00  00  00  00  00  00  00  00  10  00  00  15  31  2e
+DEBUG [02-03-2026 16:39:35:894]:   32  2e  38  34  30  2e  31  30  30  30  38  2e  33  2e  31  2e
+DEBUG [02-03-2026 16:39:35:894]:   31  2e  31  21  00  00  19  01  00  00  00  40  00  00  11  31
+DEBUG [02-03-2026 16:39:35:894]:   2e  32  2e  38  34  30  2e  31  30  30  30  38  2e  31  2e  32
+DEBUG [02-03-2026 16:39:35:894]:   21  00  00  19  03  00  00  00  40  00  00  11  31  2e  32  2e
+DEBUG [02-03-2026 16:39:35:894]:   38  34  30  2e  31  30  30  30  38  2e  31  2e  32  50  00  00
+DEBUG [02-03-2026 16:39:35:894]:   3a  51  00  00  04  00  00  40  00  52  00  00  1b  31  2e  32
+DEBUG [02-03-2026 16:39:35:894]:   2e  32  37  36  2e  30  2e  37  32  33  30  30  31  30  2e  33
+DEBUG [02-03-2026 16:39:35:894]:   2e  30  2e  33  2e  36  2e  38  55  00  00  0f  4f  46  46  49
+DEBUG [02-03-2026 16:39:35:894]:   53  5f  44  43  4d  54  4b  5f  33  36  38
+DEBUG [02-03-2026 16:39:35:894]: Parsing an A-ASSOCIATE PDU
+INFO  [02-03-2026 16:39:35:894]: Association Parameters Negotiated:
+INFO  [02-03-2026 16:39:35:894]: ====================== BEGIN A-ASSOCIATE-AC =====================
+INFO  [02-03-2026 16:39:35:894]: Our Implementation Class UID:      1.2.276.0.7230010.3.0.3.6.8
+INFO  [02-03-2026 16:39:35:894]: Our Implementation Version Name:   OFFIS_DCMTK_368
+INFO  [02-03-2026 16:39:35:894]: Their Implementation Class UID:    1.2.276.0.7230010.3.0.3.6.8
+INFO  [02-03-2026 16:39:35:894]: Their Implementation Version Name: OFFIS_DCMTK_368
+INFO  [02-03-2026 16:39:35:894]: Application Context Name:    1.2.840.10008.3.1.1.1
+INFO  [02-03-2026 16:39:35:894]: Calling Application Name:    DICOMWEB_PACS
+INFO  [02-03-2026 16:39:35:894]: Called Application Name:     DICOMWEB_PACS
+INFO  [02-03-2026 16:39:35:894]: Responding Application Name: DICOMWEB_PACS
+INFO  [02-03-2026 16:39:35:894]: Our Max PDU Receive Size:    16384
+INFO  [02-03-2026 16:39:35:894]: Their Max PDU Receive Size:  16384
+INFO  [02-03-2026 16:39:35:894]: Presentation Contexts:
+INFO  [02-03-2026 16:39:35:894]:   Context ID:        1 (Accepted)
+INFO  [02-03-2026 16:39:35:894]:     Abstract Syntax: =CTImageStorage
+INFO  [02-03-2026 16:39:35:894]:     Proposed SCP/SCU Role: Default
+INFO  [02-03-2026 16:39:35:894]:     Accepted SCP/SCU Role: Default
+INFO  [02-03-2026 16:39:35:894]:     Accepted Transfer Syntax: =LittleEndianImplicit
+INFO  [02-03-2026 16:39:35:894]:   Context ID:        3 (Accepted)
+INFO  [02-03-2026 16:39:35:894]:     Abstract Syntax: =SecondaryCaptureImageStorage
+INFO  [02-03-2026 16:39:35:894]:     Proposed SCP/SCU Role: Default
+INFO  [02-03-2026 16:39:35:894]:     Accepted SCP/SCU Role: Default
+INFO  [02-03-2026 16:39:35:894]:     Accepted Transfer Syntax: =LittleEndianImplicit
+INFO  [02-03-2026 16:39:35:894]: Requested Extended Negotiation: none
+INFO  [02-03-2026 16:39:35:894]: Accepted Extended Negotiation:  none
+INFO  [02-03-2026 16:39:35:894]: Requested User Identity Negotiation: none
+INFO  [02-03-2026 16:39:35:894]: User Identity Negotiation Response:  none
+INFO  [02-03-2026 16:39:35:894]: ======================= END A-ASSOCIATE-AC ======================
+INFO  [02-03-2026 16:39:35:894]: Association Accepted (Max Send PDV: 16372)
+INFO  [02-03-2026 16:39:35:894]: sending SOP instances ...
+DEBUG [02-03-2026 16:39:35:894]: sending SOP instance from file: C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\sample1
+DEBUG [02-03-2026 16:39:35:894]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:35:894]: DcmDataset::read() TransferSyntax="Little Endian Implicit"
+DEBUG [02-03-2026 16:39:35:894]: checking whether SOP Class UID and SOP Instance UID in dataset are consistent with transfer list
+DEBUG [02-03-2026 16:39:35:894]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM dataset
+INFO  [02-03-2026 16:39:35:894]: Sending C-STORE Request
+DEBUG [02-03-2026 16:39:35:894]: ===================== OUTGOING DIMSE MESSAGE ====================
+DEBUG [02-03-2026 16:39:35:894]: Message Type                  : C-STORE RQ
+DEBUG [02-03-2026 16:39:35:894]: Presentation Context ID       : 1
+DEBUG [02-03-2026 16:39:35:894]: Message ID                    : 1
+DEBUG [02-03-2026 16:39:35:894]: Affected SOP Class UID        : CTImageStorage
+DEBUG [02-03-2026 16:39:35:894]: Affected SOP Instance UID     : 1.3.46.670589.5.2.10.2156913941.892665339.718742
+DEBUG [02-03-2026 16:39:35:894]: Data Set                      : present
+DEBUG [02-03-2026 16:39:35:894]: Priority                      : medium
+DEBUG [02-03-2026 16:39:35:894]: ======================= END DIMSE MESSAGE =======================
+DEBUG [02-03-2026 16:39:35:957]: DcmDataset::read() TransferSyntax="Little Endian Implicit"
+INFO  [02-03-2026 16:39:35:957]: Received C-STORE Response
+DEBUG [02-03-2026 16:39:35:957]: ===================== INCOMING DIMSE MESSAGE ====================
+DEBUG [02-03-2026 16:39:35:957]: Message Type                  : C-STORE RSP
+DEBUG [02-03-2026 16:39:35:957]: Presentation Context ID       : 1
+DEBUG [02-03-2026 16:39:35:957]: Message ID Being Responded To : 1
+DEBUG [02-03-2026 16:39:35:957]: Affected SOP Class UID        : CTImageStorage
+DEBUG [02-03-2026 16:39:35:957]: Affected SOP Instance UID     : 1.3.46.670589.5.2.10.2156913941.892665339.718742
+DEBUG [02-03-2026 16:39:35:957]: Data Set                      : none
+DEBUG [02-03-2026 16:39:35:957]: DIMSE Status                  : 0x0000: Success
+DEBUG [02-03-2026 16:39:35:957]: ======================= END DIMSE MESSAGE =======================
+DEBUG [02-03-2026 16:39:35:957]: sending SOP instance from file: C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\sample2
+DEBUG [02-03-2026 16:39:35:957]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:35:957]: DcmDataset::read() TransferSyntax="Little Endian Implicit"
+DEBUG [02-03-2026 16:39:35:957]: checking whether SOP Class UID and SOP Instance UID in dataset are consistent with transfer list
+DEBUG [02-03-2026 16:39:35:957]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM dataset
+INFO  [02-03-2026 16:39:35:957]: Sending C-STORE Request
+DEBUG [02-03-2026 16:39:35:957]: ===================== OUTGOING DIMSE MESSAGE ====================
+DEBUG [02-03-2026 16:39:35:957]: Message Type                  : C-STORE RQ
+DEBUG [02-03-2026 16:39:35:957]: Presentation Context ID       : 1
+DEBUG [02-03-2026 16:39:35:957]: Message ID                    : 2
+DEBUG [02-03-2026 16:39:35:957]: Affected SOP Class UID        : CTImageStorage
+DEBUG [02-03-2026 16:39:35:957]: Affected SOP Instance UID     : 1.3.46.670589.5.2.10.2156913941.892665340.475317
+DEBUG [02-03-2026 16:39:35:957]: Data Set                      : present
+DEBUG [02-03-2026 16:39:35:957]: Priority                      : medium
+DEBUG [02-03-2026 16:39:35:957]: ======================= END DIMSE MESSAGE =======================
+DEBUG [02-03-2026 16:39:35:972]: DcmDataset::read() TransferSyntax="Little Endian Implicit"
+INFO  [02-03-2026 16:39:35:972]: Received C-STORE Response
+DEBUG [02-03-2026 16:39:35:972]: ===================== INCOMING DIMSE MESSAGE ====================
+DEBUG [02-03-2026 16:39:35:972]: Message Type                  : C-STORE RSP
+DEBUG [02-03-2026 16:39:35:972]: Presentation Context ID       : 1
+DEBUG [02-03-2026 16:39:35:972]: Message ID Being Responded To : 2
+DEBUG [02-03-2026 16:39:35:972]: Affected SOP Class UID        : CTImageStorage
+DEBUG [02-03-2026 16:39:35:972]: Affected SOP Instance UID     : 1.3.46.670589.5.2.10.2156913941.892665340.475317
+DEBUG [02-03-2026 16:39:35:972]: Data Set                      : none
+DEBUG [02-03-2026 16:39:35:972]: DIMSE Status                  : 0x0000: Success
+DEBUG [02-03-2026 16:39:35:972]: ======================= END DIMSE MESSAGE =======================
+DEBUG [02-03-2026 16:39:35:972]: sending SOP instance from file: C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSARAB
+DEBUG [02-03-2026 16:39:35:972]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:35:972]: DcmDataset::read() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:35:972]: checking whether SOP Class UID and SOP Instance UID in dataset are consistent with transfer list
+DEBUG [02-03-2026 16:39:35:972]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM dataset
+INFO  [02-03-2026 16:39:35:972]: Converting transfer syntax: Little Endian Explicit -> Little Endian Implicit
+INFO  [02-03-2026 16:39:35:972]: Sending C-STORE Request
+DEBUG [02-03-2026 16:39:35:972]: ===================== OUTGOING DIMSE MESSAGE ====================
+DEBUG [02-03-2026 16:39:35:972]: Message Type                  : C-STORE RQ
+DEBUG [02-03-2026 16:39:35:972]: Presentation Context ID       : 3
+DEBUG [02-03-2026 16:39:35:972]: Message ID                    : 3
+DEBUG [02-03-2026 16:39:35:972]: Affected SOP Class UID        : SecondaryCaptureImageStorage
+DEBUG [02-03-2026 16:39:35:972]: Affected SOP Instance UID     : 1.3.6.1.4.1.5962.1.1.0.1.1.1175775772.5726.0
+DEBUG [02-03-2026 16:39:35:972]: Data Set                      : present
+DEBUG [02-03-2026 16:39:35:972]: Priority                      : medium
+DEBUG [02-03-2026 16:39:35:972]: ======================= END DIMSE MESSAGE =======================
+DEBUG [02-03-2026 16:39:36:035]: DcmDataset::read() TransferSyntax="Little Endian Implicit"
+INFO  [02-03-2026 16:39:36:035]: Received C-STORE Response
+DEBUG [02-03-2026 16:39:36:035]: ===================== INCOMING DIMSE MESSAGE ====================
+DEBUG [02-03-2026 16:39:36:035]: Message Type                  : C-STORE RSP
+DEBUG [02-03-2026 16:39:36:035]: Presentation Context ID       : 3
+DEBUG [02-03-2026 16:39:36:035]: Message ID Being Responded To : 3
+DEBUG [02-03-2026 16:39:36:035]: Affected SOP Class UID        : SecondaryCaptureImageStorage
+DEBUG [02-03-2026 16:39:36:035]: Affected SOP Instance UID     : 1.3.6.1.4.1.5962.1.1.0.1.1.1175775772.5726.0
+DEBUG [02-03-2026 16:39:36:035]: Data Set                      : none
+DEBUG [02-03-2026 16:39:36:035]: DIMSE Status                  : 0x0000: Success
+DEBUG [02-03-2026 16:39:36:035]: ======================= END DIMSE MESSAGE =======================
+DEBUG [02-03-2026 16:39:36:035]: sending SOP instance from file: C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSFREN
+DEBUG [02-03-2026 16:39:36:035]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:36:035]: DcmDataset::read() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:36:035]: checking whether SOP Class UID and SOP Instance UID in dataset are consistent with transfer list
+DEBUG [02-03-2026 16:39:36:035]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM dataset
+INFO  [02-03-2026 16:39:36:035]: Converting transfer syntax: Little Endian Explicit -> Little Endian Implicit
+INFO  [02-03-2026 16:39:36:035]: Sending C-STORE Request
+DEBUG [02-03-2026 16:39:36:035]: ===================== OUTGOING DIMSE MESSAGE ====================
+DEBUG [02-03-2026 16:39:36:035]: Message Type                  : C-STORE RQ
+DEBUG [02-03-2026 16:39:36:035]: Presentation Context ID       : 3
+DEBUG [02-03-2026 16:39:36:035]: Message ID                    : 4
+DEBUG [02-03-2026 16:39:36:035]: Affected SOP Class UID        : SecondaryCaptureImageStorage
+DEBUG [02-03-2026 16:39:36:035]: Affected SOP Instance UID     : 1.3.6.1.4.1.5962.1.1.0.1.1.1175775772.5720.0
+DEBUG [02-03-2026 16:39:36:035]: Data Set                      : present
+DEBUG [02-03-2026 16:39:36:035]: Priority                      : medium
+DEBUG [02-03-2026 16:39:36:035]: ======================= END DIMSE MESSAGE =======================
+DEBUG [02-03-2026 16:39:36:082]: DcmDataset::read() TransferSyntax="Little Endian Implicit"
+INFO  [02-03-2026 16:39:36:082]: Received C-STORE Response
+DEBUG [02-03-2026 16:39:36:082]: ===================== INCOMING DIMSE MESSAGE ====================
+DEBUG [02-03-2026 16:39:36:082]: Message Type                  : C-STORE RSP
+DEBUG [02-03-2026 16:39:36:082]: Presentation Context ID       : 3
+DEBUG [02-03-2026 16:39:36:082]: Message ID Being Responded To : 4
+DEBUG [02-03-2026 16:39:36:082]: Affected SOP Class UID        : SecondaryCaptureImageStorage
+DEBUG [02-03-2026 16:39:36:082]: Affected SOP Instance UID     : 1.3.6.1.4.1.5962.1.1.0.1.1.1175775772.5720.0
+DEBUG [02-03-2026 16:39:36:082]: Data Set                      : none
+DEBUG [02-03-2026 16:39:36:082]: DIMSE Status                  : 0x0000: Success
+DEBUG [02-03-2026 16:39:36:082]: ======================= END DIMSE MESSAGE =======================
+DEBUG [02-03-2026 16:39:36:082]: sending SOP instance from file: C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSGERM
+DEBUG [02-03-2026 16:39:36:082]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:36:082]: DcmDataset::read() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:36:082]: checking whether SOP Class UID and SOP Instance UID in dataset are consistent with transfer list
+DEBUG [02-03-2026 16:39:36:082]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM dataset
+INFO  [02-03-2026 16:39:36:082]: Converting transfer syntax: Little Endian Explicit -> Little Endian Implicit
+INFO  [02-03-2026 16:39:36:082]: Sending C-STORE Request
+DEBUG [02-03-2026 16:39:36:082]: ===================== OUTGOING DIMSE MESSAGE ====================
+DEBUG [02-03-2026 16:39:36:082]: Message Type                  : C-STORE RQ
+DEBUG [02-03-2026 16:39:36:082]: Presentation Context ID       : 3
+DEBUG [02-03-2026 16:39:36:082]: Message ID                    : 5
+DEBUG [02-03-2026 16:39:36:082]: Affected SOP Class UID        : SecondaryCaptureImageStorage
+DEBUG [02-03-2026 16:39:36:082]: Affected SOP Instance UID     : 1.3.6.1.4.1.5962.1.1.0.1.1.1175775772.5723.0
+DEBUG [02-03-2026 16:39:36:082]: Data Set                      : present
+DEBUG [02-03-2026 16:39:36:082]: Priority                      : medium
+DEBUG [02-03-2026 16:39:36:082]: ======================= END DIMSE MESSAGE =======================
+DEBUG [02-03-2026 16:39:36:129]: DcmDataset::read() TransferSyntax="Little Endian Implicit"
+INFO  [02-03-2026 16:39:36:129]: Received C-STORE Response
+DEBUG [02-03-2026 16:39:36:129]: ===================== INCOMING DIMSE MESSAGE ====================
+DEBUG [02-03-2026 16:39:36:129]: Message Type                  : C-STORE RSP
+DEBUG [02-03-2026 16:39:36:129]: Presentation Context ID       : 3
+DEBUG [02-03-2026 16:39:36:129]: Message ID Being Responded To : 5
+DEBUG [02-03-2026 16:39:36:129]: Affected SOP Class UID        : SecondaryCaptureImageStorage
+DEBUG [02-03-2026 16:39:36:129]: Affected SOP Instance UID     : 1.3.6.1.4.1.5962.1.1.0.1.1.1175775772.5723.0
+DEBUG [02-03-2026 16:39:36:129]: Data Set                      : none
+DEBUG [02-03-2026 16:39:36:129]: DIMSE Status                  : 0x0000: Success
+DEBUG [02-03-2026 16:39:36:129]: ======================= END DIMSE MESSAGE =======================
+DEBUG [02-03-2026 16:39:36:129]: sending SOP instance from file: C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSGREEK
+DEBUG [02-03-2026 16:39:36:129]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:36:129]: DcmDataset::read() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:36:129]: checking whether SOP Class UID and SOP Instance UID in dataset are consistent with transfer list
+DEBUG [02-03-2026 16:39:36:129]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM dataset
+INFO  [02-03-2026 16:39:36:129]: Converting transfer syntax: Little Endian Explicit -> Little Endian Implicit
+INFO  [02-03-2026 16:39:36:129]: Sending C-STORE Request
+DEBUG [02-03-2026 16:39:36:129]: ===================== OUTGOING DIMSE MESSAGE ====================
+DEBUG [02-03-2026 16:39:36:129]: Message Type                  : C-STORE RQ
+DEBUG [02-03-2026 16:39:36:129]: Presentation Context ID       : 3
+DEBUG [02-03-2026 16:39:36:129]: Message ID                    : 6
+DEBUG [02-03-2026 16:39:36:129]: Affected SOP Class UID        : SecondaryCaptureImageStorage
+DEBUG [02-03-2026 16:39:36:129]: Affected SOP Instance UID     : 1.3.6.1.4.1.5962.1.1.0.1.1.1175775772.5717.0
+DEBUG [02-03-2026 16:39:36:129]: Data Set                      : present
+DEBUG [02-03-2026 16:39:36:129]: Priority                      : medium
+DEBUG [02-03-2026 16:39:36:129]: ======================= END DIMSE MESSAGE =======================
+DEBUG [02-03-2026 16:39:36:176]: DcmDataset::read() TransferSyntax="Little Endian Implicit"
+INFO  [02-03-2026 16:39:36:176]: Received C-STORE Response
+DEBUG [02-03-2026 16:39:36:176]: ===================== INCOMING DIMSE MESSAGE ====================
+DEBUG [02-03-2026 16:39:36:176]: Message Type                  : C-STORE RSP
+DEBUG [02-03-2026 16:39:36:176]: Presentation Context ID       : 3
+DEBUG [02-03-2026 16:39:36:176]: Message ID Being Responded To : 6
+DEBUG [02-03-2026 16:39:36:176]: Affected SOP Class UID        : SecondaryCaptureImageStorage
+DEBUG [02-03-2026 16:39:36:176]: Affected SOP Instance UID     : 1.3.6.1.4.1.5962.1.1.0.1.1.1175775772.5717.0
+DEBUG [02-03-2026 16:39:36:176]: Data Set                      : none
+DEBUG [02-03-2026 16:39:36:176]: DIMSE Status                  : 0x0000: Success
+DEBUG [02-03-2026 16:39:36:176]: ======================= END DIMSE MESSAGE =======================
+DEBUG [02-03-2026 16:39:36:176]: sending SOP instance from file: C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSH31
+DEBUG [02-03-2026 16:39:36:176]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:36:176]: DcmDataset::read() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:36:176]: checking whether SOP Class UID and SOP Instance UID in dataset are consistent with transfer list
+DEBUG [02-03-2026 16:39:36:176]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM dataset
+INFO  [02-03-2026 16:39:36:176]: Converting transfer syntax: Little Endian Explicit -> Little Endian Implicit
+INFO  [02-03-2026 16:39:36:176]: Sending C-STORE Request
+DEBUG [02-03-2026 16:39:36:176]: ===================== OUTGOING DIMSE MESSAGE ====================
+DEBUG [02-03-2026 16:39:36:176]: Message Type                  : C-STORE RQ
+DEBUG [02-03-2026 16:39:36:176]: Presentation Context ID       : 3
+DEBUG [02-03-2026 16:39:36:176]: Message ID                    : 7
+DEBUG [02-03-2026 16:39:36:176]: Affected SOP Class UID        : SecondaryCaptureImageStorage
+DEBUG [02-03-2026 16:39:36:176]: Affected SOP Instance UID     : 1.3.6.1.4.1.5962.1.1.0.1.1.1175775771.5702.0
+DEBUG [02-03-2026 16:39:36:176]: Data Set                      : present
+DEBUG [02-03-2026 16:39:36:176]: Priority                      : medium
+DEBUG [02-03-2026 16:39:36:176]: ======================= END DIMSE MESSAGE =======================
+DEBUG [02-03-2026 16:39:36:223]: DcmDataset::read() TransferSyntax="Little Endian Implicit"
+INFO  [02-03-2026 16:39:36:223]: Received C-STORE Response
+DEBUG [02-03-2026 16:39:36:223]: ===================== INCOMING DIMSE MESSAGE ====================
+DEBUG [02-03-2026 16:39:36:223]: Message Type                  : C-STORE RSP
+DEBUG [02-03-2026 16:39:36:223]: Presentation Context ID       : 3
+DEBUG [02-03-2026 16:39:36:223]: Message ID Being Responded To : 7
+DEBUG [02-03-2026 16:39:36:223]: Affected SOP Class UID        : SecondaryCaptureImageStorage
+DEBUG [02-03-2026 16:39:36:223]: Affected SOP Instance UID     : 1.3.6.1.4.1.5962.1.1.0.1.1.1175775771.5702.0
+DEBUG [02-03-2026 16:39:36:223]: Data Set                      : none
+DEBUG [02-03-2026 16:39:36:223]: DIMSE Status                  : 0x0000: Success
+DEBUG [02-03-2026 16:39:36:223]: ======================= END DIMSE MESSAGE =======================
+DEBUG [02-03-2026 16:39:36:223]: sending SOP instance from file: C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSH32
+DEBUG [02-03-2026 16:39:36:223]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:36:223]: DcmDataset::read() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:36:238]: checking whether SOP Class UID and SOP Instance UID in dataset are consistent with transfer list
+DEBUG [02-03-2026 16:39:36:238]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM dataset
+INFO  [02-03-2026 16:39:36:238]: Converting transfer syntax: Little Endian Explicit -> Little Endian Implicit
+INFO  [02-03-2026 16:39:36:238]: Sending C-STORE Request
+DEBUG [02-03-2026 16:39:36:238]: ===================== OUTGOING DIMSE MESSAGE ====================
+DEBUG [02-03-2026 16:39:36:238]: Message Type                  : C-STORE RQ
+DEBUG [02-03-2026 16:39:36:238]: Presentation Context ID       : 3
+DEBUG [02-03-2026 16:39:36:238]: Message ID                    : 8
+DEBUG [02-03-2026 16:39:36:238]: Affected SOP Class UID        : SecondaryCaptureImageStorage
+DEBUG [02-03-2026 16:39:36:238]: Affected SOP Instance UID     : 1.3.6.1.4.1.5962.1.1.0.1.1.1175775771.5705.0
+DEBUG [02-03-2026 16:39:36:238]: Data Set                      : present
+DEBUG [02-03-2026 16:39:36:238]: Priority                      : medium
+DEBUG [02-03-2026 16:39:36:238]: ======================= END DIMSE MESSAGE =======================
+DEBUG [02-03-2026 16:39:36:286]: DcmDataset::read() TransferSyntax="Little Endian Implicit"
+INFO  [02-03-2026 16:39:36:286]: Received C-STORE Response
+DEBUG [02-03-2026 16:39:36:286]: ===================== INCOMING DIMSE MESSAGE ====================
+DEBUG [02-03-2026 16:39:36:286]: Message Type                  : C-STORE RSP
+DEBUG [02-03-2026 16:39:36:286]: Presentation Context ID       : 3
+DEBUG [02-03-2026 16:39:36:286]: Message ID Being Responded To : 8
+DEBUG [02-03-2026 16:39:36:286]: Affected SOP Class UID        : SecondaryCaptureImageStorage
+DEBUG [02-03-2026 16:39:36:286]: Affected SOP Instance UID     : 1.3.6.1.4.1.5962.1.1.0.1.1.1175775771.5705.0
+DEBUG [02-03-2026 16:39:36:286]: Data Set                      : none
+DEBUG [02-03-2026 16:39:36:286]: DIMSE Status                  : 0x0000: Success
+DEBUG [02-03-2026 16:39:36:286]: ======================= END DIMSE MESSAGE =======================
+DEBUG [02-03-2026 16:39:36:286]: sending SOP instance from file: C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSHBRW
+DEBUG [02-03-2026 16:39:36:286]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:36:286]: DcmDataset::read() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:36:286]: checking whether SOP Class UID and SOP Instance UID in dataset are consistent with transfer list
+DEBUG [02-03-2026 16:39:36:286]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM dataset
+INFO  [02-03-2026 16:39:36:286]: Converting transfer syntax: Little Endian Explicit -> Little Endian Implicit
+INFO  [02-03-2026 16:39:36:286]: Sending C-STORE Request
+DEBUG [02-03-2026 16:39:36:286]: ===================== OUTGOING DIMSE MESSAGE ====================
+DEBUG [02-03-2026 16:39:36:286]: Message Type                  : C-STORE RQ
+DEBUG [02-03-2026 16:39:36:286]: Presentation Context ID       : 3
+DEBUG [02-03-2026 16:39:36:286]: Message ID                    : 9
+DEBUG [02-03-2026 16:39:36:286]: Affected SOP Class UID        : SecondaryCaptureImageStorage
+DEBUG [02-03-2026 16:39:36:286]: Affected SOP Instance UID     : 1.3.6.1.4.1.5962.1.1.0.1.1.1175775772.5732.0
+DEBUG [02-03-2026 16:39:36:286]: Data Set                      : present
+DEBUG [02-03-2026 16:39:36:286]: Priority                      : medium
+DEBUG [02-03-2026 16:39:36:286]: ======================= END DIMSE MESSAGE =======================
+DEBUG [02-03-2026 16:39:36:333]: DcmDataset::read() TransferSyntax="Little Endian Implicit"
+INFO  [02-03-2026 16:39:36:333]: Received C-STORE Response
+DEBUG [02-03-2026 16:39:36:333]: ===================== INCOMING DIMSE MESSAGE ====================
+DEBUG [02-03-2026 16:39:36:333]: Message Type                  : C-STORE RSP
+DEBUG [02-03-2026 16:39:36:333]: Presentation Context ID       : 3
+DEBUG [02-03-2026 16:39:36:333]: Message ID Being Responded To : 9
+DEBUG [02-03-2026 16:39:36:333]: Affected SOP Class UID        : SecondaryCaptureImageStorage
+DEBUG [02-03-2026 16:39:36:333]: Affected SOP Instance UID     : 1.3.6.1.4.1.5962.1.1.0.1.1.1175775772.5732.0
+DEBUG [02-03-2026 16:39:36:333]: Data Set                      : none
+DEBUG [02-03-2026 16:39:36:333]: DIMSE Status                  : 0x0000: Success
+DEBUG [02-03-2026 16:39:36:333]: ======================= END DIMSE MESSAGE =======================
+DEBUG [02-03-2026 16:39:36:333]: sending SOP instance from file: C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSI2
+DEBUG [02-03-2026 16:39:36:333]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:36:333]: DcmDataset::read() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:36:333]: checking whether SOP Class UID and SOP Instance UID in dataset are consistent with transfer list
+DEBUG [02-03-2026 16:39:36:333]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM dataset
+INFO  [02-03-2026 16:39:36:333]: Converting transfer syntax: Little Endian Explicit -> Little Endian Implicit
+INFO  [02-03-2026 16:39:36:333]: Sending C-STORE Request
+DEBUG [02-03-2026 16:39:36:333]: ===================== OUTGOING DIMSE MESSAGE ====================
+DEBUG [02-03-2026 16:39:36:333]: Message Type                  : C-STORE RQ
+DEBUG [02-03-2026 16:39:36:333]: Presentation Context ID       : 3
+DEBUG [02-03-2026 16:39:36:333]: Message ID                    : 10
+DEBUG [02-03-2026 16:39:36:333]: Affected SOP Class UID        : SecondaryCaptureImageStorage
+DEBUG [02-03-2026 16:39:36:333]: Affected SOP Instance UID     : 1.3.6.1.4.1.5962.1.1.0.1.1.1175775771.5708.0
+DEBUG [02-03-2026 16:39:36:333]: Data Set                      : present
+DEBUG [02-03-2026 16:39:36:333]: Priority                      : medium
+DEBUG [02-03-2026 16:39:36:333]: ======================= END DIMSE MESSAGE =======================
+DEBUG [02-03-2026 16:39:36:380]: DcmDataset::read() TransferSyntax="Little Endian Implicit"
+INFO  [02-03-2026 16:39:36:380]: Received C-STORE Response
+DEBUG [02-03-2026 16:39:36:380]: ===================== INCOMING DIMSE MESSAGE ====================
+DEBUG [02-03-2026 16:39:36:380]: Message Type                  : C-STORE RSP
+DEBUG [02-03-2026 16:39:36:380]: Presentation Context ID       : 3
+DEBUG [02-03-2026 16:39:36:380]: Message ID Being Responded To : 10
+DEBUG [02-03-2026 16:39:36:380]: Affected SOP Class UID        : SecondaryCaptureImageStorage
+DEBUG [02-03-2026 16:39:36:380]: Affected SOP Instance UID     : 1.3.6.1.4.1.5962.1.1.0.1.1.1175775771.5708.0
+DEBUG [02-03-2026 16:39:36:380]: Data Set                      : none
+DEBUG [02-03-2026 16:39:36:380]: DIMSE Status                  : 0x0000: Success
+DEBUG [02-03-2026 16:39:36:380]: ======================= END DIMSE MESSAGE =======================
+DEBUG [02-03-2026 16:39:36:380]: sending SOP instance from file: C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSRUSS
+DEBUG [02-03-2026 16:39:36:380]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:36:380]: DcmDataset::read() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:36:380]: checking whether SOP Class UID and SOP Instance UID in dataset are consistent with transfer list
+DEBUG [02-03-2026 16:39:36:380]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM dataset
+INFO  [02-03-2026 16:39:36:380]: Converting transfer syntax: Little Endian Explicit -> Little Endian Implicit
+INFO  [02-03-2026 16:39:36:380]: Sending C-STORE Request
+DEBUG [02-03-2026 16:39:36:380]: ===================== OUTGOING DIMSE MESSAGE ====================
+DEBUG [02-03-2026 16:39:36:380]: Message Type                  : C-STORE RQ
+DEBUG [02-03-2026 16:39:36:380]: Presentation Context ID       : 3
+DEBUG [02-03-2026 16:39:36:380]: Message ID                    : 11
+DEBUG [02-03-2026 16:39:36:380]: Affected SOP Class UID        : SecondaryCaptureImageStorage
+DEBUG [02-03-2026 16:39:36:380]: Affected SOP Instance UID     : 1.3.6.1.4.1.5962.1.1.0.1.1.1175775772.5729.0
+DEBUG [02-03-2026 16:39:36:380]: Data Set                      : present
+DEBUG [02-03-2026 16:39:36:380]: Priority                      : medium
+DEBUG [02-03-2026 16:39:36:380]: ======================= END DIMSE MESSAGE =======================
+DEBUG [02-03-2026 16:39:36:426]: DcmDataset::read() TransferSyntax="Little Endian Implicit"
+INFO  [02-03-2026 16:39:36:426]: Received C-STORE Response
+DEBUG [02-03-2026 16:39:36:426]: ===================== INCOMING DIMSE MESSAGE ====================
+DEBUG [02-03-2026 16:39:36:426]: Message Type                  : C-STORE RSP
+DEBUG [02-03-2026 16:39:36:426]: Presentation Context ID       : 3
+DEBUG [02-03-2026 16:39:36:426]: Message ID Being Responded To : 11
+DEBUG [02-03-2026 16:39:36:426]: Affected SOP Class UID        : SecondaryCaptureImageStorage
+DEBUG [02-03-2026 16:39:36:426]: Affected SOP Instance UID     : 1.3.6.1.4.1.5962.1.1.0.1.1.1175775772.5729.0
+DEBUG [02-03-2026 16:39:36:426]: Data Set                      : none
+DEBUG [02-03-2026 16:39:36:426]: DIMSE Status                  : 0x0000: Success
+DEBUG [02-03-2026 16:39:36:426]: ======================= END DIMSE MESSAGE =======================
+DEBUG [02-03-2026 16:39:36:426]: sending SOP instance from file: C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSX1
+DEBUG [02-03-2026 16:39:36:426]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:36:426]: DcmDataset::read() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:36:426]: checking whether SOP Class UID and SOP Instance UID in dataset are consistent with transfer list
+DEBUG [02-03-2026 16:39:36:426]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM dataset
+INFO  [02-03-2026 16:39:36:426]: Converting transfer syntax: Little Endian Explicit -> Little Endian Implicit
+INFO  [02-03-2026 16:39:36:426]: Sending C-STORE Request
+DEBUG [02-03-2026 16:39:36:426]: ===================== OUTGOING DIMSE MESSAGE ====================
+DEBUG [02-03-2026 16:39:36:426]: Message Type                  : C-STORE RQ
+DEBUG [02-03-2026 16:39:36:426]: Presentation Context ID       : 3
+DEBUG [02-03-2026 16:39:36:426]: Message ID                    : 12
+DEBUG [02-03-2026 16:39:36:426]: Affected SOP Class UID        : SecondaryCaptureImageStorage
+DEBUG [02-03-2026 16:39:36:426]: Affected SOP Instance UID     : 1.3.6.1.4.1.5962.1.1.0.1.1.1175775771.5711.0
+DEBUG [02-03-2026 16:39:36:426]: Data Set                      : present
+DEBUG [02-03-2026 16:39:36:426]: Priority                      : medium
+DEBUG [02-03-2026 16:39:36:426]: ======================= END DIMSE MESSAGE =======================
+DEBUG [02-03-2026 16:39:36:473]: DcmDataset::read() TransferSyntax="Little Endian Implicit"
+INFO  [02-03-2026 16:39:36:473]: Received C-STORE Response
+DEBUG [02-03-2026 16:39:36:473]: ===================== INCOMING DIMSE MESSAGE ====================
+DEBUG [02-03-2026 16:39:36:473]: Message Type                  : C-STORE RSP
+DEBUG [02-03-2026 16:39:36:473]: Presentation Context ID       : 3
+DEBUG [02-03-2026 16:39:36:473]: Message ID Being Responded To : 12
+DEBUG [02-03-2026 16:39:36:473]: Affected SOP Class UID        : SecondaryCaptureImageStorage
+DEBUG [02-03-2026 16:39:36:473]: Affected SOP Instance UID     : 1.3.6.1.4.1.5962.1.1.0.1.1.1175775771.5711.0
+DEBUG [02-03-2026 16:39:36:473]: Data Set                      : none
+DEBUG [02-03-2026 16:39:36:473]: DIMSE Status                  : 0x0000: Success
+DEBUG [02-03-2026 16:39:36:473]: ======================= END DIMSE MESSAGE =======================
+DEBUG [02-03-2026 16:39:36:473]: sending SOP instance from file: C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSX2
+DEBUG [02-03-2026 16:39:36:473]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:36:473]: DcmDataset::read() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 16:39:36:473]: checking whether SOP Class UID and SOP Instance UID in dataset are consistent with transfer list
+DEBUG [02-03-2026 16:39:36:473]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM dataset
+INFO  [02-03-2026 16:39:36:473]: Converting transfer syntax: Little Endian Explicit -> Little Endian Implicit
+INFO  [02-03-2026 16:39:36:473]: Sending C-STORE Request
+DEBUG [02-03-2026 16:39:36:473]: ===================== OUTGOING DIMSE MESSAGE ====================
+DEBUG [02-03-2026 16:39:36:473]: Message Type                  : C-STORE RQ
+DEBUG [02-03-2026 16:39:36:473]: Presentation Context ID       : 3
+DEBUG [02-03-2026 16:39:36:473]: Message ID                    : 13
+DEBUG [02-03-2026 16:39:36:473]: Affected SOP Class UID        : SecondaryCaptureImageStorage
+DEBUG [02-03-2026 16:39:36:473]: Affected SOP Instance UID     : 1.3.6.1.4.1.5962.1.1.0.1.1.1175775771.5714.0
+DEBUG [02-03-2026 16:39:36:473]: Data Set                      : present
+DEBUG [02-03-2026 16:39:36:473]: Priority                      : medium
+DEBUG [02-03-2026 16:39:36:473]: ======================= END DIMSE MESSAGE =======================
+DEBUG [02-03-2026 16:39:36:520]: DcmDataset::read() TransferSyntax="Little Endian Implicit"
+INFO  [02-03-2026 16:39:36:520]: Received C-STORE Response
+DEBUG [02-03-2026 16:39:36:520]: ===================== INCOMING DIMSE MESSAGE ====================
+DEBUG [02-03-2026 16:39:36:520]: Message Type                  : C-STORE RSP
+DEBUG [02-03-2026 16:39:36:520]: Presentation Context ID       : 3
+DEBUG [02-03-2026 16:39:36:520]: Message ID Being Responded To : 13
+DEBUG [02-03-2026 16:39:36:520]: Affected SOP Class UID        : SecondaryCaptureImageStorage
+DEBUG [02-03-2026 16:39:36:520]: Affected SOP Instance UID     : 1.3.6.1.4.1.5962.1.1.0.1.1.1175775771.5714.0
+DEBUG [02-03-2026 16:39:36:520]: Data Set                      : none
+DEBUG [02-03-2026 16:39:36:520]: DIMSE Status                  : 0x0000: Success
+DEBUG [02-03-2026 16:39:36:520]: ======================= END DIMSE MESSAGE =======================
+INFO  [02-03-2026 16:39:36:520]: Releasing Association
+DEBUG [02-03-2026 16:39:36:520]: Cleaning up internal association and network structures
+ERROR [02-03-2026 17:35:28:836]: Association Request Failed: 0006:031c TCP Initialization Error: The operation completed successfully.
+INFO  [02-03-2026 17:36:36:247]: determining input files ...
+INFO  [02-03-2026 17:36:36:247]: checking input files ...
+DEBUG [02-03-2026 17:36:36:247]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\sample1'
+DEBUG [02-03-2026 17:36:36:247]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 17:36:36:247]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 17:36:36:247]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 17:36:36:247]: successfully added SOP instance 1.3.46.670589.5.2.10.2156913941.892665339.718742 to the transfer list
+DEBUG [02-03-2026 17:36:36:247]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\sample2'
+DEBUG [02-03-2026 17:36:36:247]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 17:36:36:247]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 17:36:36:247]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 17:36:36:247]: successfully added SOP instance 1.3.46.670589.5.2.10.2156913941.892665340.475317 to the transfer list
+DEBUG [02-03-2026 17:36:36:247]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSARAB'
+DEBUG [02-03-2026 17:36:36:247]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 17:36:36:247]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 17:36:36:247]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 17:36:36:247]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775772.5726.0 to the transfer list
+DEBUG [02-03-2026 17:36:36:247]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSFREN'
+DEBUG [02-03-2026 17:36:36:247]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 17:36:36:247]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 17:36:36:247]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 17:36:36:247]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775772.5720.0 to the transfer list
+DEBUG [02-03-2026 17:36:36:247]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSGERM'
+DEBUG [02-03-2026 17:36:36:247]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 17:36:36:247]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 17:36:36:247]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 17:36:36:247]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775772.5723.0 to the transfer list
+DEBUG [02-03-2026 17:36:36:247]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSGREEK'
+DEBUG [02-03-2026 17:36:36:247]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 17:36:36:262]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 17:36:36:262]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 17:36:36:262]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775772.5717.0 to the transfer list
+DEBUG [02-03-2026 17:36:36:262]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSH31'
+DEBUG [02-03-2026 17:36:36:262]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 17:36:36:262]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 17:36:36:262]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 17:36:36:262]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775771.5702.0 to the transfer list
+DEBUG [02-03-2026 17:36:36:262]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSH32'
+DEBUG [02-03-2026 17:36:36:262]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 17:36:36:262]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 17:36:36:262]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 17:36:36:262]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775771.5705.0 to the transfer list
+DEBUG [02-03-2026 17:36:36:262]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSHBRW'
+DEBUG [02-03-2026 17:36:36:262]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 17:36:36:262]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 17:36:36:262]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 17:36:36:262]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775772.5732.0 to the transfer list
+DEBUG [02-03-2026 17:36:36:262]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSI2'
+DEBUG [02-03-2026 17:36:36:262]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 17:36:36:262]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 17:36:36:262]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 17:36:36:262]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775771.5708.0 to the transfer list
+DEBUG [02-03-2026 17:36:36:262]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSRUSS'
+DEBUG [02-03-2026 17:36:36:262]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 17:36:36:262]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 17:36:36:262]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 17:36:36:262]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775772.5729.0 to the transfer list
+DEBUG [02-03-2026 17:36:36:262]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSX1'
+DEBUG [02-03-2026 17:36:36:262]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 17:36:36:262]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 17:36:36:262]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 17:36:36:262]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775771.5711.0 to the transfer list
+DEBUG [02-03-2026 17:36:36:262]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSX2'
+DEBUG [02-03-2026 17:36:36:262]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 17:36:36:262]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 17:36:36:262]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 17:36:36:262]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775771.5714.0 to the transfer list
+INFO  [02-03-2026 17:36:36:262]: in total, there are 13 SOP instances to be sent, 0 invalid files are ignored
+DEBUG [02-03-2026 17:36:36:262]: preparing presentation context for SOP Class / Transfer Syntax: CTImageStorage / Little Endian Implicit
+DEBUG [02-03-2026 17:36:36:262]: added new presentation context with ID 1
+DEBUG [02-03-2026 17:36:36:262]: preparing presentation context for SOP Class / Transfer Syntax: CTImageStorage / Little Endian Implicit
+DEBUG [02-03-2026 17:36:36:262]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 1
+DEBUG [02-03-2026 17:36:36:262]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 17:36:36:262]: added new presentation context with ID 3
+DEBUG [02-03-2026 17:36:36:262]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 17:36:36:262]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 3
+DEBUG [02-03-2026 17:36:36:262]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 17:36:36:262]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 3
+DEBUG [02-03-2026 17:36:36:262]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 17:36:36:262]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 3
+DEBUG [02-03-2026 17:36:36:262]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 17:36:36:262]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 3
+DEBUG [02-03-2026 17:36:36:262]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 17:36:36:262]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 3
+DEBUG [02-03-2026 17:36:36:262]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 17:36:36:262]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 3
+DEBUG [02-03-2026 17:36:36:262]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 17:36:36:262]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 3
+DEBUG [02-03-2026 17:36:36:262]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 17:36:36:262]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 3
+DEBUG [02-03-2026 17:36:36:262]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 17:36:36:262]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 3
+DEBUG [02-03-2026 17:36:36:262]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 17:36:36:262]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 3
+INFO  [02-03-2026 17:36:36:262]: initializing network ...
+DEBUG [02-03-2026 17:36:36:262]: Configured a total of 2 presentation contexts for SCU
+INFO  [02-03-2026 17:36:36:262]: negotiating network association ...
+INFO  [02-03-2026 17:36:36:262]: Request Parameters:
+INFO  [02-03-2026 17:36:36:262]: ====================== BEGIN A-ASSOCIATE-RQ =====================
+INFO  [02-03-2026 17:36:36:262]: Our Implementation Class UID:      1.2.276.0.7230010.3.0.3.6.8
+INFO  [02-03-2026 17:36:36:262]: Our Implementation Version Name:   OFFIS_DCMTK_368
+INFO  [02-03-2026 17:36:36:262]: Their Implementation Class UID:    
+INFO  [02-03-2026 17:36:36:262]: Their Implementation Version Name: 
+INFO  [02-03-2026 17:36:36:262]: Application Context Name:    1.2.840.10008.3.1.1.1
+INFO  [02-03-2026 17:36:36:262]: Calling Application Name:    DICOMWEB_PACS
+INFO  [02-03-2026 17:36:36:262]: Called Application Name:     DICOMWEB_PACS
+INFO  [02-03-2026 17:36:36:262]: Responding Application Name: 
+INFO  [02-03-2026 17:36:36:262]: Our Max PDU Receive Size:    16384
+INFO  [02-03-2026 17:36:36:262]: Their Max PDU Receive Size:  0
+INFO  [02-03-2026 17:36:36:262]: Presentation Contexts:
+INFO  [02-03-2026 17:36:36:262]:   Context ID:        1 (Proposed)
+INFO  [02-03-2026 17:36:36:262]:     Abstract Syntax: =CTImageStorage
+INFO  [02-03-2026 17:36:36:262]:     Proposed SCP/SCU Role: Default
+INFO  [02-03-2026 17:36:36:262]:     Proposed Transfer Syntax(es):
+INFO  [02-03-2026 17:36:36:262]:       =LittleEndianExplicit
+INFO  [02-03-2026 17:36:36:262]:       =BigEndianExplicit
+INFO  [02-03-2026 17:36:36:262]:       =LittleEndianImplicit
+INFO  [02-03-2026 17:36:36:262]:   Context ID:        3 (Proposed)
+INFO  [02-03-2026 17:36:36:262]:     Abstract Syntax: =SecondaryCaptureImageStorage
+INFO  [02-03-2026 17:36:36:262]:     Proposed SCP/SCU Role: Default
+INFO  [02-03-2026 17:36:36:262]:     Proposed Transfer Syntax(es):
+INFO  [02-03-2026 17:36:36:262]:       =LittleEndianExplicit
+INFO  [02-03-2026 17:36:36:262]:       =BigEndianExplicit
+INFO  [02-03-2026 17:36:36:262]:       =LittleEndianImplicit
+INFO  [02-03-2026 17:36:36:262]: Requested Extended Negotiation: none
+INFO  [02-03-2026 17:36:36:262]: Accepted Extended Negotiation:  none
+INFO  [02-03-2026 17:36:36:262]: Requested User Identity Negotiation: none
+INFO  [02-03-2026 17:36:36:262]: User Identity Negotiation Response:  none
+INFO  [02-03-2026 17:36:36:262]: ======================= END A-ASSOCIATE-RQ ======================
+INFO  [02-03-2026 17:36:36:262]: Requesting Association
+DEBUG [02-03-2026 17:36:38:283]: Association Request Failed: 0006:031c TCP Initialization Error: The operation completed successfully.
+ERROR [02-03-2026 17:36:38:283]: cannot negotiate network association: TCP Initialization Error: The operation completed successfully.
+DEBUG [02-03-2026 17:36:38:283]: Cleaning up internal association and network structures
+ERROR [02-03-2026 17:37:04:668]: Association Request Failed: 0006:031c TCP Initialization Error: The operation completed successfully.
+INFO  [02-03-2026 17:38:07:779]: determining input files ...
+INFO  [02-03-2026 17:38:07:779]: checking input files ...
+DEBUG [02-03-2026 17:38:07:779]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\sample1'
+DEBUG [02-03-2026 17:38:07:779]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 17:38:07:779]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 17:38:07:779]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 17:38:07:779]: successfully added SOP instance 1.3.46.670589.5.2.10.2156913941.892665339.718742 to the transfer list
+DEBUG [02-03-2026 17:38:07:779]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\sample2'
+DEBUG [02-03-2026 17:38:07:779]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 17:38:07:779]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 17:38:07:779]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 17:38:07:779]: successfully added SOP instance 1.3.46.670589.5.2.10.2156913941.892665340.475317 to the transfer list
+DEBUG [02-03-2026 17:38:07:779]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSARAB'
+DEBUG [02-03-2026 17:38:07:779]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 17:38:07:779]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 17:38:07:779]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 17:38:07:779]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775772.5726.0 to the transfer list
+DEBUG [02-03-2026 17:38:07:779]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSFREN'
+DEBUG [02-03-2026 17:38:07:779]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 17:38:07:779]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 17:38:07:779]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 17:38:07:779]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775772.5720.0 to the transfer list
+DEBUG [02-03-2026 17:38:07:779]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSGERM'
+DEBUG [02-03-2026 17:38:07:779]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 17:38:07:779]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 17:38:07:779]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 17:38:07:779]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775772.5723.0 to the transfer list
+DEBUG [02-03-2026 17:38:07:779]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSGREEK'
+DEBUG [02-03-2026 17:38:07:779]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 17:38:07:779]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 17:38:07:779]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 17:38:07:779]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775772.5717.0 to the transfer list
+DEBUG [02-03-2026 17:38:07:779]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSH31'
+DEBUG [02-03-2026 17:38:07:779]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 17:38:07:779]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 17:38:07:779]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 17:38:07:779]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775771.5702.0 to the transfer list
+DEBUG [02-03-2026 17:38:07:779]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSH32'
+DEBUG [02-03-2026 17:38:07:779]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 17:38:07:779]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 17:38:07:779]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 17:38:07:779]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775771.5705.0 to the transfer list
+DEBUG [02-03-2026 17:38:07:779]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSHBRW'
+DEBUG [02-03-2026 17:38:07:779]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 17:38:07:779]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 17:38:07:779]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 17:38:07:779]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775772.5732.0 to the transfer list
+DEBUG [02-03-2026 17:38:07:779]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSI2'
+DEBUG [02-03-2026 17:38:07:779]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 17:38:07:779]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 17:38:07:779]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 17:38:07:779]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775771.5708.0 to the transfer list
+DEBUG [02-03-2026 17:38:07:779]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSRUSS'
+DEBUG [02-03-2026 17:38:07:779]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 17:38:07:779]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 17:38:07:779]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 17:38:07:779]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775772.5729.0 to the transfer list
+DEBUG [02-03-2026 17:38:07:779]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSX1'
+DEBUG [02-03-2026 17:38:07:779]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 17:38:07:779]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 17:38:07:779]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 17:38:07:779]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775771.5711.0 to the transfer list
+DEBUG [02-03-2026 17:38:07:779]: adding DICOM file 'C:\Praveen\Projects\dicomweb-pacs-src\dicomweb-pacs\import\SCSX2'
+DEBUG [02-03-2026 17:38:07:779]: getting SOP Class UID, SOP Instance UID and Transfer Syntax UID from DICOM file
+DEBUG [02-03-2026 17:38:07:779]: DcmMetaInfo::checkAndReadPreamble() TransferSyntax="Little Endian Explicit"
+DEBUG [02-03-2026 17:38:07:779]: trying to get SOP Class UID, SOP Instance UID and Transfer Syntax UID from meta-header
+DEBUG [02-03-2026 17:38:07:779]: successfully added SOP instance 1.3.6.1.4.1.5962.1.1.0.1.1.1175775771.5714.0 to the transfer list
+INFO  [02-03-2026 17:38:07:779]: in total, there are 13 SOP instances to be sent, 0 invalid files are ignored
+DEBUG [02-03-2026 17:38:07:779]: preparing presentation context for SOP Class / Transfer Syntax: CTImageStorage / Little Endian Implicit
+DEBUG [02-03-2026 17:38:07:779]: added new presentation context with ID 1
+DEBUG [02-03-2026 17:38:07:779]: preparing presentation context for SOP Class / Transfer Syntax: CTImageStorage / Little Endian Implicit
+DEBUG [02-03-2026 17:38:07:779]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 1
+DEBUG [02-03-2026 17:38:07:779]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 17:38:07:779]: added new presentation context with ID 3
+DEBUG [02-03-2026 17:38:07:779]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 17:38:07:779]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 3
+DEBUG [02-03-2026 17:38:07:779]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 17:38:07:779]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 3
+DEBUG [02-03-2026 17:38:07:779]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 17:38:07:779]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 3
+DEBUG [02-03-2026 17:38:07:779]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 17:38:07:779]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 3
+DEBUG [02-03-2026 17:38:07:779]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 17:38:07:779]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 3
+DEBUG [02-03-2026 17:38:07:779]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 17:38:07:779]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 3
+DEBUG [02-03-2026 17:38:07:779]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 17:38:07:779]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 3
+DEBUG [02-03-2026 17:38:07:779]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 17:38:07:779]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 3
+DEBUG [02-03-2026 17:38:07:779]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 17:38:07:779]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 3
+DEBUG [02-03-2026 17:38:07:779]: preparing presentation context for SOP Class / Transfer Syntax: SecondaryCaptureImageStorage / Little Endian Explicit
+DEBUG [02-03-2026 17:38:07:779]: same SOP Class UID and compatible Transfer Syntax UID as for another SOP instance, reusing the presentation context with ID 3
+INFO  [02-03-2026 17:38:07:779]: initializing network ...
+DEBUG [02-03-2026 17:38:07:779]: Configured a total of 2 presentation contexts for SCU
+INFO  [02-03-2026 17:38:07:779]: negotiating network association ...
+INFO  [02-03-2026 17:38:07:779]: Request Parameters:
+INFO  [02-03-2026 17:38:07:779]: ====================== BEGIN A-ASSOCIATE-RQ =====================
+INFO  [02-03-2026 17:38:07:779]: Our Implementation Class UID:      1.2.276.0.7230010.3.0.3.6.8
+INFO  [02-03-2026 17:38:07:779]: Our Implementation Version Name:   OFFIS_DCMTK_368
+INFO  [02-03-2026 17:38:07:779]: Their Implementation Class UID:    
+INFO  [02-03-2026 17:38:07:779]: Their Implementation Version Name: 
+INFO  [02-03-2026 17:38:07:779]: Application Context Name:    1.2.840.10008.3.1.1.1
+INFO  [02-03-2026 17:38:07:779]: Calling Application Name:    DICOMWEB_PACS
+INFO  [02-03-2026 17:38:07:779]: Called Application Name:     DICOMWEB_PACS
+INFO  [02-03-2026 17:38:07:779]: Responding Application Name: 
+INFO  [02-03-2026 17:38:07:779]: Our Max PDU Receive Size:    16384
+INFO  [02-03-2026 17:38:07:779]: Their Max PDU Receive Size:  0
+INFO  [02-03-2026 17:38:07:779]: Presentation Contexts:
+INFO  [02-03-2026 17:38:07:779]:   Context ID:        1 (Proposed)
+INFO  [02-03-2026 17:38:07:779]:     Abstract Syntax: =CTImageStorage
+INFO  [02-03-2026 17:38:07:779]:     Proposed SCP/SCU Role: Default
+INFO  [02-03-2026 17:38:07:779]:     Proposed Transfer Syntax(es):
+INFO  [02-03-2026 17:38:07:779]:       =LittleEndianExplicit
+INFO  [02-03-2026 17:38:07:779]:       =BigEndianExplicit
+INFO  [02-03-2026 17:38:07:779]:       =LittleEndianImplicit
+INFO  [02-03-2026 17:38:07:779]:   Context ID:        3 (Proposed)
+INFO  [02-03-2026 17:38:07:779]:     Abstract Syntax: =SecondaryCaptureImageStorage
+INFO  [02-03-2026 17:38:07:779]:     Proposed SCP/SCU Role: Default
+INFO  [02-03-2026 17:38:07:779]:     Proposed Transfer Syntax(es):
+INFO  [02-03-2026 17:38:07:779]:       =LittleEndianExplicit
+INFO  [02-03-2026 17:38:07:779]:       =BigEndianExplicit
+INFO  [02-03-2026 17:38:07:779]:       =LittleEndianImplicit
+INFO  [02-03-2026 17:38:07:779]: Requested Extended Negotiation: none
+INFO  [02-03-2026 17:38:07:779]: Accepted Extended Negotiation:  none
+INFO  [02-03-2026 17:38:07:779]: Requested User Identity Negotiation: none
+INFO  [02-03-2026 17:38:07:779]: User Identity Negotiation Response:  none
+INFO  [02-03-2026 17:38:07:779]: ======================= END A-ASSOCIATE-RQ ======================
+INFO  [02-03-2026 17:38:07:779]: Requesting Association
+DEBUG [02-03-2026 17:38:09:807]: Association Request Failed: 0006:031c TCP Initialization Error: The operation completed successfully.
+ERROR [02-03-2026 17:38:09:807]: cannot negotiate network association: TCP Initialization Error: The operation completed successfully.
+DEBUG [02-03-2026 17:38:09:807]: Cleaning up internal association and network structures
