@@ -1,0 +1,437 @@
+01:18:41.486 INFO  starting... 
+01:18:41.545 INFO  api-server listening on port: 5001 
+01:18:41.545 INFO  pacs-server listening on port: 8888 
+01:18:41.545 INFO  sending C-ECHO to target: DICOMWEB_PACS 
+01:18:41.551 INFO  Request Parameters: ====================== BEGIN A-ASSOCIATE-RQ =====================
+Our Implementation Class UID:      1.2.276.0.7230010.3.0.3.6.8
+Our Implementation Version Name:   OFFIS_DCMTK_368
+Their Implementation Class UID:    
+Their Implementation Version Name: 
+Application Context Name:    1.2.840.10008.3.1.1.1
+Calling Application Name:    DICOMWEB_PACS
+Called Application Name:     DICOMWEB_PACS
+Responding Application Name: 
+Our Max PDU Receive Size:    16384
+Their Max PDU Receive Size:  0
+Presentation Contexts:
+  Context ID:        1 (Proposed)
+    Abstract Syntax: =VerificationSOPClass
+    Proposed SCP/SCU Role: Default
+    Proposed Transfer Syntax(es):
+      =LittleEndianImplicit
+Requested Extended Negotiation: none
+Accepted Extended Negotiation:  none
+Requested User Identity Negotiation: none
+User Identity Negotiation Response:  none
+======================= END A-ASSOCIATE-RQ ====================== 
+01:18:41.554 INFO  Requesting Association 
+01:18:42.075 INFO  Association Parameters Negotiated: ====================== BEGIN A-ASSOCIATE-RQ =====================
+Our Implementation Class UID:      1.2.276.0.7230010.3.0.3.6.8
+Our Implementation Version Name:   OFFIS_DCMTK_368
+Their Implementation Class UID:    1.2.276.0.7230010.3.0.3.6.8
+Their Implementation Version Name: OFFIS_DCMTK_368
+Application Context Name:    1.2.840.10008.3.1.1.1
+Calling Application Name:    DICOMWEB_PACS
+Called Application Name:     DICOMWEB_PACS
+Responding Application Name: DICOMWEB_PACS
+Our Max PDU Receive Size:    16384
+Their Max PDU Receive Size:  16384
+Presentation Contexts:
+  Context ID:        1 (Accepted)
+    Abstract Syntax: =VerificationSOPClass
+    Proposed SCP/SCU Role: Default
+    Accepted SCP/SCU Role: Default
+    Accepted Transfer Syntax: =LittleEndianImplicit
+Requested Extended Negotiation: none
+Accepted Extended Negotiation:  none
+Requested User Identity Negotiation: none
+User Identity Negotiation Response:  none
+======================= END A-ASSOCIATE-RQ ====================== 
+01:18:42.166 INFO  request succeeded 
+01:19:19.771 INFO  {"code":0,"container":null,"message":"request succeeded","status":"success"} 
+01:25:35.016 ERROR c-find failure: TCP Initialization Error: The operation completed successfully. 
+01:26:56.853 ERROR c-find failure: TCP Initialization Error: The operation completed successfully. 
+01:27:35.365 ERROR c-find failure: TCP Initialization Error: The operation completed successfully. 
+01:29:54.396 ERROR c-find failure: TCP Initialization Error: The operation completed successfully. 
+01:30:19.598 ERROR c-find failure: TCP Initialization Error: The operation completed successfully. 
+01:33:05.010 ERROR c-find failure: TCP Initialization Error: The operation completed successfully. 
+01:33:40.842 ERROR c-find failure: TCP Initialization Error: The operation completed successfully. 
+01:36:48.335 INFO  shutting down...SIGINT 
+01:36:48.351 INFO  sending shutdown request to target: DICOMWEB_PACS 
+01:36:58.084 INFO  starting... 
+01:36:58.143 INFO  api-server listening on port: 5001 
+01:36:58.143 INFO  pacs-server listening on port: 8888 
+01:36:58.144 INFO  sending C-ECHO to target: DICOMWEB_PACS 
+01:36:58.155 INFO  Request Parameters: ====================== BEGIN A-ASSOCIATE-RQ =====================
+Our Implementation Class UID:      1.2.276.0.7230010.3.0.3.6.8
+Our Implementation Version Name:   OFFIS_DCMTK_368
+Their Implementation Class UID:    
+Their Implementation Version Name: 
+Application Context Name:    1.2.840.10008.3.1.1.1
+Calling Application Name:    DICOMWEB_PACS
+Called Application Name:     DICOMWEB_PACS
+Responding Application Name: 
+Our Max PDU Receive Size:    16384
+Their Max PDU Receive Size:  0
+Presentation Contexts:
+  Context ID:        1 (Proposed)
+    Abstract Syntax: =VerificationSOPClass
+    Proposed SCP/SCU Role: Default
+    Proposed Transfer Syntax(es):
+      =LittleEndianImplicit
+Requested Extended Negotiation: none
+Accepted Extended Negotiation:  none
+Requested User Identity Negotiation: none
+User Identity Negotiation Response:  none
+======================= END A-ASSOCIATE-RQ ====================== 
+01:36:58.157 INFO  Requesting Association 
+01:36:58.157 INFO  Association Parameters Negotiated: ====================== BEGIN A-ASSOCIATE-RQ =====================
+Our Implementation Class UID:      1.2.276.0.7230010.3.0.3.6.8
+Our Implementation Version Name:   OFFIS_DCMTK_368
+Their Implementation Class UID:    1.2.276.0.7230010.3.0.3.6.8
+Their Implementation Version Name: OFFIS_DCMTK_368
+Application Context Name:    1.2.840.10008.3.1.1.1
+Calling Application Name:    DICOMWEB_PACS
+Called Application Name:     DICOMWEB_PACS
+Responding Application Name: DICOMWEB_PACS
+Our Max PDU Receive Size:    16384
+Their Max PDU Receive Size:  16384
+Presentation Contexts:
+  Context ID:        1 (Accepted)
+    Abstract Syntax: =VerificationSOPClass
+    Proposed SCP/SCU Role: Default
+    Accepted SCP/SCU Role: Default
+    Accepted Transfer Syntax: =LittleEndianImplicit
+Requested Extended Negotiation: none
+Accepted Extended Negotiation:  none
+Requested User Identity Negotiation: none
+User Identity Negotiation Response:  none
+======================= END A-ASSOCIATE-RQ ====================== 
+01:36:58.160 INFO  request succeeded 
+01:52:35.292 INFO  shutting down...SIGINT 
+01:52:35.324 INFO  sending shutdown request to target: DICOMWEB_PACS 
+01:52:35.332 INFO  Request Parameters: ====================== BEGIN A-ASSOCIATE-RQ =====================
+Our Implementation Class UID:      1.2.276.0.7230010.3.0.3.6.8
+Our Implementation Version Name:   OFFIS_DCMTK_368
+Their Implementation Class UID:    
+Their Implementation Version Name: 
+Application Context Name:    1.2.840.10008.3.1.1.1
+Calling Application Name:    DICOMWEB_PACS
+Called Application Name:     DICOMWEB_PACS
+Responding Application Name: 
+Our Max PDU Receive Size:    16384
+Their Max PDU Receive Size:  0
+Presentation Contexts:
+  Context ID:        1 (Proposed)
+    Abstract Syntax: 1.2.276.0.7230010.3.4.1915765545.18030.917282194.0
+    Proposed SCP/SCU Role: Default
+    Proposed Transfer Syntax(es):
+      =LittleEndianImplicit
+Requested Extended Negotiation: none
+Accepted Extended Negotiation:  none
+Requested User Identity Negotiation: none
+User Identity Negotiation Response:  none
+======================= END A-ASSOCIATE-RQ ====================== 
+13:44:54.872 INFO  starting... 
+13:44:54.941 INFO  api-server listening on port: 5001 
+13:44:54.941 INFO  pacs-server listening on port: 8888 
+13:44:54.946 INFO  sending C-ECHO to target: DICOMWEB_PACS 
+13:44:54.955 INFO  Request Parameters: ====================== BEGIN A-ASSOCIATE-RQ =====================
+Our Implementation Class UID:      1.2.276.0.7230010.3.0.3.6.8
+Our Implementation Version Name:   OFFIS_DCMTK_368
+Their Implementation Class UID:    
+Their Implementation Version Name: 
+Application Context Name:    1.2.840.10008.3.1.1.1
+Calling Application Name:    DICOMWEB_PACS
+Called Application Name:     DICOMWEB_PACS
+Responding Application Name: 
+Our Max PDU Receive Size:    16384
+Their Max PDU Receive Size:  0
+Presentation Contexts:
+  Context ID:        1 (Proposed)
+    Abstract Syntax: =VerificationSOPClass
+    Proposed SCP/SCU Role: Default
+    Proposed Transfer Syntax(es):
+      =LittleEndianImplicit
+Requested Extended Negotiation: none
+Accepted Extended Negotiation:  none
+Requested User Identity Negotiation: none
+User Identity Negotiation Response:  none
+======================= END A-ASSOCIATE-RQ ====================== 
+13:44:54.958 INFO  Requesting Association 
+13:44:55.465 INFO  Association Parameters Negotiated: ====================== BEGIN A-ASSOCIATE-RQ =====================
+Our Implementation Class UID:      1.2.276.0.7230010.3.0.3.6.8
+Our Implementation Version Name:   OFFIS_DCMTK_368
+Their Implementation Class UID:    1.2.276.0.7230010.3.0.3.6.8
+Their Implementation Version Name: OFFIS_DCMTK_368
+Application Context Name:    1.2.840.10008.3.1.1.1
+Calling Application Name:    DICOMWEB_PACS
+Called Application Name:     DICOMWEB_PACS
+Responding Application Name: DICOMWEB_PACS
+Our Max PDU Receive Size:    16384
+Their Max PDU Receive Size:  16384
+Presentation Contexts:
+  Context ID:        1 (Accepted)
+    Abstract Syntax: =VerificationSOPClass
+    Proposed SCP/SCU Role: Default
+    Accepted SCP/SCU Role: Default
+    Accepted Transfer Syntax: =LittleEndianImplicit
+Requested Extended Negotiation: none
+Accepted Extended Negotiation:  none
+Requested User Identity Negotiation: none
+User Identity Negotiation Response:  none
+======================= END A-ASSOCIATE-RQ ====================== 
+13:44:55.485 INFO  request succeeded 
+13:51:08.682 INFO  shutting down...SIGINT 
+13:51:08.686 INFO  sending shutdown request to target: DICOMWEB_PACS 
+20:15:53.511 INFO  starting... 
+20:15:53.572 INFO  api-server listening on port: 5001 
+20:15:53.572 INFO  pacs-server listening on port: 8888 
+20:15:53.576 INFO  sending C-ECHO to target: DICOMWEB_PACS 
+20:15:53.588 INFO  Request Parameters: ====================== BEGIN A-ASSOCIATE-RQ =====================
+Our Implementation Class UID:      1.2.276.0.7230010.3.0.3.6.8
+Our Implementation Version Name:   OFFIS_DCMTK_368
+Their Implementation Class UID:    
+Their Implementation Version Name: 
+Application Context Name:    1.2.840.10008.3.1.1.1
+Calling Application Name:    DICOMWEB_PACS
+Called Application Name:     DICOMWEB_PACS
+Responding Application Name: 
+Our Max PDU Receive Size:    16384
+Their Max PDU Receive Size:  0
+Presentation Contexts:
+  Context ID:        1 (Proposed)
+    Abstract Syntax: =VerificationSOPClass
+    Proposed SCP/SCU Role: Default
+    Proposed Transfer Syntax(es):
+      =LittleEndianImplicit
+Requested Extended Negotiation: none
+Accepted Extended Negotiation:  none
+Requested User Identity Negotiation: none
+User Identity Negotiation Response:  none
+======================= END A-ASSOCIATE-RQ ====================== 
+20:15:53.590 INFO  Requesting Association 
+20:15:54.111 INFO  Association Parameters Negotiated: ====================== BEGIN A-ASSOCIATE-RQ =====================
+Our Implementation Class UID:      1.2.276.0.7230010.3.0.3.6.8
+Our Implementation Version Name:   OFFIS_DCMTK_368
+Their Implementation Class UID:    1.2.276.0.7230010.3.0.3.6.8
+Their Implementation Version Name: OFFIS_DCMTK_368
+Application Context Name:    1.2.840.10008.3.1.1.1
+Calling Application Name:    DICOMWEB_PACS
+Called Application Name:     DICOMWEB_PACS
+Responding Application Name: DICOMWEB_PACS
+Our Max PDU Receive Size:    16384
+Their Max PDU Receive Size:  16384
+Presentation Contexts:
+  Context ID:        1 (Accepted)
+    Abstract Syntax: =VerificationSOPClass
+    Proposed SCP/SCU Role: Default
+    Accepted SCP/SCU Role: Default
+    Accepted Transfer Syntax: =LittleEndianImplicit
+Requested Extended Negotiation: none
+Accepted Extended Negotiation:  none
+Requested User Identity Negotiation: none
+User Identity Negotiation Response:  none
+======================= END A-ASSOCIATE-RQ ====================== 
+20:15:54.141 INFO  request succeeded 
+20:17:50.465 INFO  shutting down...SIGINT 
+20:17:50.470 INFO  sending shutdown request to target: DICOMWEB_PACS 
+20:18:16.007 INFO  starting... 
+20:18:16.104 INFO  api-server listening on port: 5001 
+20:18:16.104 INFO  pacs-server listening on port: 8888 
+20:18:16.105 INFO  sending C-ECHO to target: DICOMWEB_PACS 
+20:18:16.113 INFO  Request Parameters: ====================== BEGIN A-ASSOCIATE-RQ =====================
+Our Implementation Class UID:      1.2.276.0.7230010.3.0.3.6.8
+Our Implementation Version Name:   OFFIS_DCMTK_368
+Their Implementation Class UID:    
+Their Implementation Version Name: 
+Application Context Name:    1.2.840.10008.3.1.1.1
+Calling Application Name:    DICOMWEB_PACS
+Called Application Name:     DICOMWEB_PACS
+Responding Application Name: 
+Our Max PDU Receive Size:    16384
+Their Max PDU Receive Size:  0
+Presentation Contexts:
+  Context ID:        1 (Proposed)
+    Abstract Syntax: =VerificationSOPClass
+    Proposed SCP/SCU Role: Default
+    Proposed Transfer Syntax(es):
+      =LittleEndianImplicit
+Requested Extended Negotiation: none
+Accepted Extended Negotiation:  none
+Requested User Identity Negotiation: none
+User Identity Negotiation Response:  none
+======================= END A-ASSOCIATE-RQ ====================== 
+20:18:16.114 INFO  Requesting Association 
+20:18:16.645 INFO  Association Parameters Negotiated: ====================== BEGIN A-ASSOCIATE-RQ =====================
+Our Implementation Class UID:      1.2.276.0.7230010.3.0.3.6.8
+Our Implementation Version Name:   OFFIS_DCMTK_368
+Their Implementation Class UID:    1.2.276.0.7230010.3.0.3.6.8
+Their Implementation Version Name: OFFIS_DCMTK_368
+Application Context Name:    1.2.840.10008.3.1.1.1
+Calling Application Name:    DICOMWEB_PACS
+Called Application Name:     DICOMWEB_PACS
+Responding Application Name: DICOMWEB_PACS
+Our Max PDU Receive Size:    16384
+Their Max PDU Receive Size:  16384
+Presentation Contexts:
+  Context ID:        1 (Accepted)
+    Abstract Syntax: =VerificationSOPClass
+    Proposed SCP/SCU Role: Default
+    Accepted SCP/SCU Role: Default
+    Accepted Transfer Syntax: =LittleEndianImplicit
+Requested Extended Negotiation: none
+Accepted Extended Negotiation:  none
+Requested User Identity Negotiation: none
+User Identity Negotiation Response:  none
+======================= END A-ASSOCIATE-RQ ====================== 
+20:18:16.652 INFO  request succeeded 
+20:38:39.146 INFO  shutting down...SIGINT 
+20:38:39.244 INFO  sending shutdown request to target: DICOMWEB_PACS 
+20:38:39.278 INFO  Request Parameters: ====================== BEGIN A-ASSOCIATE-RQ =====================
+Our Implementation Class UID:      1.2.276.0.7230010.3.0.3.6.8
+Our Implementation Version Name:   OFFIS_DCMTK_368
+Their Implementation Class UID:    
+Their Implementation Version Name: 
+Application Context Name:    1.2.840.10008.3.1.1.1
+Calling Application Name:    DICOMWEB_PACS
+Called Application Name:     DICOMWEB_PACS
+Responding Application Name: 
+Our Max PDU Receive Size:    16384
+Their Max PDU Receive Size:  0
+Presentation Contexts:
+  Context ID:        1 (Proposed)
+    Abstract Syntax: 1.2.276.0.7230010.3.4.1915765545.18030.917282194.0
+    Proposed SCP/SCU Role: Default
+    Proposed Transfer Syntax(es):
+      =LittleEndianImplicit
+Requested Extended Negotiation: none
+Accepted Extended Negotiation:  none
+Requested User Identity Negotiation: none
+User Identity Negotiation Response:  none
+======================= END A-ASSOCIATE-RQ ====================== 
+20:38:49.100 INFO  starting... 
+20:38:49.168 INFO  api-server listening on port: 5001 
+20:38:49.168 INFO  pacs-server listening on port: 8888 
+20:38:49.172 INFO  sending C-ECHO to target: DICOMWEB_PACS 
+20:38:49.181 INFO  Request Parameters: ====================== BEGIN A-ASSOCIATE-RQ =====================
+Our Implementation Class UID:      1.2.276.0.7230010.3.0.3.6.8
+Our Implementation Version Name:   OFFIS_DCMTK_368
+Their Implementation Class UID:    
+Their Implementation Version Name: 
+Application Context Name:    1.2.840.10008.3.1.1.1
+Calling Application Name:    DICOMWEB_PACS
+Called Application Name:     DICOMWEB_PACS
+Responding Application Name: 
+Our Max PDU Receive Size:    16384
+Their Max PDU Receive Size:  0
+Presentation Contexts:
+  Context ID:        1 (Proposed)
+    Abstract Syntax: =VerificationSOPClass
+    Proposed SCP/SCU Role: Default
+    Proposed Transfer Syntax(es):
+      =LittleEndianImplicit
+Requested Extended Negotiation: none
+Accepted Extended Negotiation:  none
+Requested User Identity Negotiation: none
+User Identity Negotiation Response:  none
+======================= END A-ASSOCIATE-RQ ====================== 
+20:38:49.183 INFO  Requesting Association 
+20:38:49.691 INFO  Association Parameters Negotiated: ====================== BEGIN A-ASSOCIATE-RQ =====================
+Our Implementation Class UID:      1.2.276.0.7230010.3.0.3.6.8
+Our Implementation Version Name:   OFFIS_DCMTK_368
+Their Implementation Class UID:    1.2.276.0.7230010.3.0.3.6.8
+Their Implementation Version Name: OFFIS_DCMTK_368
+Application Context Name:    1.2.840.10008.3.1.1.1
+Calling Application Name:    DICOMWEB_PACS
+Called Application Name:     DICOMWEB_PACS
+Responding Application Name: DICOMWEB_PACS
+Our Max PDU Receive Size:    16384
+Their Max PDU Receive Size:  16384
+Presentation Contexts:
+  Context ID:        1 (Accepted)
+    Abstract Syntax: =VerificationSOPClass
+    Proposed SCP/SCU Role: Default
+    Accepted SCP/SCU Role: Default
+    Accepted Transfer Syntax: =LittleEndianImplicit
+Requested Extended Negotiation: none
+Accepted Extended Negotiation:  none
+Requested User Identity Negotiation: none
+User Identity Negotiation Response:  none
+======================= END A-ASSOCIATE-RQ ====================== 
+20:38:49.721 INFO  request succeeded 
+21:14:30.466 INFO  shutting down...SIGINT 
+21:14:30.519 INFO  sending shutdown request to target: DICOMWEB_PACS 
+21:14:30.546 INFO  Request Parameters: ====================== BEGIN A-ASSOCIATE-RQ =====================
+Our Implementation Class UID:      1.2.276.0.7230010.3.0.3.6.8
+Our Implementation Version Name:   OFFIS_DCMTK_368
+Their Implementation Class UID:    
+Their Implementation Version Name: 
+Application Context Name:    1.2.840.10008.3.1.1.1
+Calling Application Name:    DICOMWEB_PACS
+Called Application Name:     DICOMWEB_PACS
+Responding Application Name: 
+Our Max PDU Receive Size:    16384
+Their Max PDU Receive Size:  0
+Presentation Contexts:
+  Context ID:        1 (Proposed)
+    Abstract Syntax: 1.2.276.0.7230010.3.4.1915765545.18030.917282194.0
+    Proposed SCP/SCU Role: Default
+    Proposed Transfer Syntax(es):
+      =LittleEndianImplicit
+Requested Extended Negotiation: none
+Accepted Extended Negotiation:  none
+Requested User Identity Negotiation: none
+User Identity Negotiation Response:  none
+======================= END A-ASSOCIATE-RQ ====================== 
+23:50:00.111 INFO  starting... 
+23:50:00.173 INFO  api-server listening on port: 5001 
+23:50:00.173 INFO  pacs-server listening on port: 8888 
+23:50:00.178 INFO  sending C-ECHO to target: DICOMWEB_PACS 
+23:50:00.191 INFO  Request Parameters: ====================== BEGIN A-ASSOCIATE-RQ =====================
+Our Implementation Class UID:      1.2.276.0.7230010.3.0.3.6.8
+Our Implementation Version Name:   OFFIS_DCMTK_368
+Their Implementation Class UID:    
+Their Implementation Version Name: 
+Application Context Name:    1.2.840.10008.3.1.1.1
+Calling Application Name:    DICOMWEB_PACS
+Called Application Name:     DICOMWEB_PACS
+Responding Application Name: 
+Our Max PDU Receive Size:    16384
+Their Max PDU Receive Size:  0
+Presentation Contexts:
+  Context ID:        1 (Proposed)
+    Abstract Syntax: =VerificationSOPClass
+    Proposed SCP/SCU Role: Default
+    Proposed Transfer Syntax(es):
+      =LittleEndianImplicit
+Requested Extended Negotiation: none
+Accepted Extended Negotiation:  none
+Requested User Identity Negotiation: none
+User Identity Negotiation Response:  none
+======================= END A-ASSOCIATE-RQ ====================== 
+23:50:00.196 INFO  Requesting Association 
+23:50:00.707 INFO  Association Parameters Negotiated: ====================== BEGIN A-ASSOCIATE-RQ =====================
+Our Implementation Class UID:      1.2.276.0.7230010.3.0.3.6.8
+Our Implementation Version Name:   OFFIS_DCMTK_368
+Their Implementation Class UID:    1.2.276.0.7230010.3.0.3.6.8
+Their Implementation Version Name: OFFIS_DCMTK_368
+Application Context Name:    1.2.840.10008.3.1.1.1
+Calling Application Name:    DICOMWEB_PACS
+Called Application Name:     DICOMWEB_PACS
+Responding Application Name: DICOMWEB_PACS
+Our Max PDU Receive Size:    16384
+Their Max PDU Receive Size:  16384
+Presentation Contexts:
+  Context ID:        1 (Accepted)
+    Abstract Syntax: =VerificationSOPClass
+    Proposed SCP/SCU Role: Default
+    Accepted SCP/SCU Role: Default
+    Accepted Transfer Syntax: =LittleEndianImplicit
+Requested Extended Negotiation: none
+Accepted Extended Negotiation:  none
+Requested User Identity Negotiation: none
+User Identity Negotiation Response:  none
+======================= END A-ASSOCIATE-RQ ====================== 
+23:50:00.727 INFO  request succeeded 
+

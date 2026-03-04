@@ -1,0 +1,24 @@
+01:09:02.208 INFO  shutting down...SIGINT 
+01:09:02.248 INFO  sending shutdown request to target: DICOMWEB_PACS 
+01:09:02.255 INFO  Request Parameters: ====================== BEGIN A-ASSOCIATE-RQ =====================
+Our Implementation Class UID:      1.2.276.0.7230010.3.0.3.6.8
+Our Implementation Version Name:   OFFIS_DCMTK_368
+Their Implementation Class UID:    
+Their Implementation Version Name: 
+Application Context Name:    1.2.840.10008.3.1.1.1
+Calling Application Name:    DICOMWEB_PACS
+Called Application Name:     DICOMWEB_PACS
+Responding Application Name: 
+Our Max PDU Receive Size:    16384
+Their Max PDU Receive Size:  0
+Presentation Contexts:
+  Context ID:        1 (Proposed)
+    Abstract Syntax: 1.2.276.0.7230010.3.4.1915765545.18030.917282194.0
+    Proposed SCP/SCU Role: Default
+    Proposed Transfer Syntax(es):
+      =LittleEndianImplicit
+Requested Extended Negotiation: none
+Accepted Extended Negotiation:  none
+Requested User Identity Negotiation: none
+User Identity Negotiation Response:  none
+======================= END A-ASSOCIATE-RQ ====================== 
