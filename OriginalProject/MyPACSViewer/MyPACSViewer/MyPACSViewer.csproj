@@ -1,0 +1,103 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon />
+    <Win32Resource />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="x64\**" />
+    <EmbeddedResource Remove="x64\**" />
+    <None Remove="x64\**" />
+    <Page Remove="x64\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="View\Assets\annotation.png" />
+    <None Remove="View\Assets\direction-adjustment.svg" />
+    <None Remove="View\Assets\exit.png" />
+    <None Remove="View\Assets\file.png" />
+    <None Remove="View\Assets\flip-horizontal.png" />
+    <None Remove="View\Assets\flip-vertical.png" />
+    <None Remove="View\Assets\folder.png" />
+    <None Remove="View\Assets\grid-four.svg" />
+    <None Remove="View\Assets\icon.ico" />
+    <None Remove="View\Assets\instance.png" />
+    <None Remove="View\Assets\lung.png" />
+    <None Remove="View\Assets\MicroDicom.ico" />
+    <None Remove="View\Assets\net.png" />
+    <None Remove="View\Assets\patient.png" />
+    <None Remove="View\Assets\refresh.svg" />
+    <None Remove="View\Assets\revert.png" />
+    <None Remove="View\Assets\rotate.svg" />
+    <None Remove="View\Assets\rotation-horizontal.svg" />
+    <None Remove="View\Assets\rotation-vertical.svg" />
+    <None Remove="View\Assets\series.png" />
+    <None Remove="View\Assets\study.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommonServiceLocator" Version="2.0.6" />
+    <PackageReference Include="fo-dicom" Version="5.0.1" />
+    <PackageReference Include="fo-dicom.Imaging.Desktop" Version="5.0.1" />
+    <PackageReference Include="MvvmLight" Version="5.4.1.1" />
+    <PackageReference Include="MvvmLightLibs" Version="5.4.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ViewerSCU\ViewerSCU.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="View\Assets\exit.png" />
+    <Resource Include="View\Assets\file.png" />
+    <Resource Include="View\Assets\flip-horizontal.png" />
+    <Resource Include="View\Assets\flip-vertical.png" />
+    <Resource Include="View\Assets\annotation.png" />
+    <Resource Include="icon.ico" />
+    <Resource Include="View\Assets\folder.png" />
+    <Resource Include="View\Assets\instance.png" />
+    <Resource Include="View\Assets\lung.png" />
+    <Resource Include="View\Assets\net.png" />
+    <Resource Include="View\Assets\patient.png" />
+    <Resource Include="View\Assets\revert.png" />
+    <Resource Include="View\Assets\series.png" />
+    <Resource Include="View\Assets\study.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
