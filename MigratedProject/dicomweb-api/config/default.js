@@ -21,11 +21,11 @@ const config = {
 
   // PostgreSQL connection — override in config/local.js or via NODE_CONFIG env var
   db: {
-    host: 'dicomwebmig.clacs4oiaso2.ap-southeast-2.rds.amazonaws.com',
+    host: '<host url>',
     port: 5432,
     database: 'dicomweb',
     user: 'postgres',
-    password: 'i2Y43jGm#YM92bh',
+    password: '<password>',
   },
 };
 
