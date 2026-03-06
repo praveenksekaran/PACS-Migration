@@ -46,6 +46,8 @@ Two open-source projects were selected to form the complete PACS system:
 
 The original system was a tightly coupled monolith running on a single on-premise Windows machine. The API server and viewer were bundled together in one Node.js process, and the WPF viewer was a separate Windows-only desktop app.
 
+<img width="633" height="269" alt="LegacyDiagram" src="https://github.com/user-attachments/assets/f15eea7d-bee7-4d5a-8cf9-7f15717d2eb7" />
+
 ```
 DICOM Devices (CT/MRI)
         | DIMSE Protocol (C-Store/C-Find/C-Echo) — Port 8888
@@ -77,6 +79,9 @@ DICOM Devices (CT/MRI)
 ## 2.2 New Architecture
 
 The migrated system separates every concern into an independently deployable cloud service.
+
+<img width="806" height="305" alt="NewDiagram" src="https://github.com/user-attachments/assets/1ebd8a5a-7601-4831-baa1-58ed452a716d" />
+
 
 ```
                         Browser
