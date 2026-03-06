@@ -9,7 +9,7 @@ import { mockAppConfig } from '../helpers/routes'
 test.describe('Feature 1: Application Startup and Configuration', () => {
   // ── Scenario 1.1 ────────────────────────────────────────────────────────────
   test('1.1 – reads apiUrl from server-injected window.config', async ({ page }) => {
-    const injectedUrl = 'http://localhost:5001'
+    const injectedUrl = 'http://3.27.26.186:5001'
 
     await page.route('/app-config.js', (route) => {
       route.fulfill({

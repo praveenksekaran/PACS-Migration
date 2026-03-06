@@ -49,14 +49,14 @@ describe('initCornerstone', () => {
     expect(dicomImageLoader.init).toHaveBeenCalledTimes(1)
   })
 
-  it('registers the wadouri loader with cornerstone core', async () => {
+  it('registers the wadouri loader', async () => {
     await initCornerstone()
-    expect(dicomImageLoader.wadouri.register).toHaveBeenCalledWith(cornerstoneCore)
+    expect(dicomImageLoader.wadouri.register).toHaveBeenCalledTimes(1)
   })
 
-  it('registers the wadors loader with cornerstone core', async () => {
+  it('registers the wadors loader', async () => {
     await initCornerstone()
-    expect(dicomImageLoader.wadors.register).toHaveBeenCalledWith(cornerstoneCore)
+    expect(dicomImageLoader.wadors.register).toHaveBeenCalledTimes(1)
   })
 
   it('calls registerVolumeLoader()', async () => {

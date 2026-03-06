@@ -6,7 +6,9 @@ export default function App() {
   const [ready, setReady] = useState(false)
 
   useEffect(() => {
-    initCornerstone().then(() => setReady(true))
+    initCornerstone()
+      .then(() => setReady(true))
+      .catch((err) => console.error('Cornerstone init failed:', err))
   }, [])
 
   if (!ready) {

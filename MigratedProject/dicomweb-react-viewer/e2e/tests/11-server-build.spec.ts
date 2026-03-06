@@ -18,7 +18,7 @@ import { mockAppConfig } from '../helpers/routes'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
-const PUBLIC_DIR = path.resolve(__dirname, '../../../dicomweb-viewer/public')
+const PUBLIC_DIR = path.resolve(__dirname, '../../dist')
 
 test.describe('Feature 13: Build Output Verification', () => {
   // ── Scenario 13.1 ───────────────────────────────────────────────────────────

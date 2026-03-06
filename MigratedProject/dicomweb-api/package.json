@@ -5,7 +5,9 @@
   "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js",
-    "import": "node src/storescu.js"
+    "import": "node src/storescu.js",
+    "migrate": "node src/db/migrate.js",
+    "upload": "node src/scripts/upload-to-s3.js"
   },
   "keywords": [
     "DICOMWEB",
@@ -25,11 +27,11 @@
     "close-with-grace": "^1.2.0",
     "config": "^3.3.10",
     "dicom-data-dictionary": "^0.3.1",
-    "dicom-dimse-native": "2.4.6",
     "dicom-parser": "^1.8.21",
     "fastify": "^4.26.0",
     "fs-walk": "^0.0.2",
-    "shelljs": "^0.8.5",
+    "@aws-sdk/client-s3": "^3.540.0",
+    "pg": "^8.11.3",
     "simple-node-logger": "^21.8.12"
   },
   "devDependencies": {

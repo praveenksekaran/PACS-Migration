@@ -1,12 +1,12 @@
-const fs = require('fs');
-const path = require('path');
 const dicomParser = require('dicom-parser');
 const crypto = require('crypto');
 const { Readable } = require('stream');
 const config = require('config');
 const utils = require('../utils');
+const s3 = require('../s3');
 
 const logger = utils.getLogger();
+const dataBucket = config.get('aws.dataBucket');
 
 function applyDefault(json, tag, vr, defaultValue) {
   const rsp = json;
@@ -38,7 +38,7 @@ module.exports = function routes(server, opts, done) {
 
   server.get('/rs/studies', async (req, reply) => {
     const tags = utils.studyLevelTags();
-    const json = await utils.doFind('STUDY', req.query, tags);
+    const json = await utils.doFindPg('STUDY', req.query, tags);
     reply.header('Content-Type', 'application/dicom+json');
     return json;
   });
@@ -50,7 +50,7 @@ module.exports = function routes(server, opts, done) {
     query.StudyInstanceUID = req.params.studyInstanceUid;
     const stTags = utils.studyLevelTags();
     const serTags = utils.seriesLevelTags();
-    const json = await utils.doFind('SERIES', query, [...stTags, ...serTags]);
+    const json = await utils.doFindPg('SERIES', query, [...stTags, ...serTags]);
     reply.header('Content-Type', 'application/dicom+json');
     return json;
   });
@@ -62,7 +62,7 @@ module.exports = function routes(server, opts, done) {
     const { query } = req;
     query.StudyInstanceUID = req.params.studyInstanceUid;
 
-    const json = await utils.doFind('SERIES', query, tags);
+    const json = await utils.doFindPg('SERIES', query, tags);
     reply.header('Content-Type', 'application/dicom+json');
     return json;
   });
@@ -75,7 +75,7 @@ module.exports = function routes(server, opts, done) {
     query.StudyInstanceUID = req.params.studyInstanceUid;
     query.SeriesInstanceUID = req.params.seriesInstanceUid;
 
-    const json = await utils.doFind('IMAGE', query, tags);
+    const json = await utils.doFindPg('IMAGE', query, tags);
     reply.header('Content-Type', 'application/dicom+json');
     return json;
   });
@@ -90,7 +90,7 @@ module.exports = function routes(server, opts, done) {
     query.StudyInstanceUID = req.params.studyInstanceUid;
     query.SeriesInstanceUID = req.params.seriesInstanceUid;
 
-    const json = await utils.doFind('IMAGE', query, [...stTags, ...serTags, ...imTags]);
+    const json = await utils.doFindPg('IMAGE', query, [...stTags, ...serTags, ...imTags]);
     reply.header('Content-Type', 'application/dicom+json');
     return fixResponse(json);
   });
@@ -106,7 +106,7 @@ module.exports = function routes(server, opts, done) {
     query.SeriesInstanceUID = req.params.seriesInstanceUid;
     query.SOPInstanceUID = req.params.sopInstanceUid;
 
-    const json = await utils.doFind('IMAGE', query, [...stTags, ...serTags, ...imTags]);
+    const json = await utils.doFindPg('IMAGE', query, [...stTags, ...serTags, ...imTags]);
     reply.header('Content-Type', 'application/dicom+json');
     return fixResponse(json);
   });
@@ -115,38 +115,22 @@ module.exports = function routes(server, opts, done) {
 
   server.get('/rs/studies/:studyInstanceUid/series/:seriesInstanceUid/instances/:sopInstanceUid/frames/:frame', async (req, reply) => {
     const { studyInstanceUid, seriesInstanceUid, sopInstanceUid } = req.params;
-
-    const storagePath = config.get('storagePath');
-    const studyPath = path.join(storagePath, studyInstanceUid);
-    const pathname = path.join(studyPath, sopInstanceUid);
+    const s3Key = `${studyInstanceUid}/${sopInstanceUid}`;
 
     let contentLocation = `/studies/${studyInstanceUid}`;
-    if (seriesInstanceUid) {
-      contentLocation += `/series/${seriesInstanceUid}`;
-    }
-    if (sopInstanceUid) {
-      contentLocation += `/instance/${sopInstanceUid}`;
-    }
+    if (seriesInstanceUid) contentLocation += `/series/${seriesInstanceUid}`;
+    if (sopInstanceUid)    contentLocation += `/instance/${sopInstanceUid}`;
 
+    let data;
     try {
-      await utils.fileExists(pathname);
+      data = await s3.getObjectBuffer(dataBucket, s3Key);
     } catch (error) {
       logger.error(error);
       reply.code(404);
-      return `File ${pathname} not found!`;
+      return `Object ${s3Key} not found in ${dataBucket}`;
     }
 
     try {
-      await utils.compressFile(pathname, studyPath, '1.2.840.10008.1.2'); // for now default to uncompressed
-    } catch (error) {
-      logger.error(error);
-      reply.code(500);
-      return `failed to compress ${pathname}`;
-    }
-
-    // read file from file system
-    try {
-      const data = await fs.promises.readFile(pathname);
       const dataset = dicomParser.parseDicom(data);
       const pixelDataElement = dataset.elements.x7fe00010;
       const buffer = Buffer.from(dataset.byteArray.buffer, pixelDataElement.dataOffset, pixelDataElement.length);
@@ -172,7 +156,7 @@ module.exports = function routes(server, opts, done) {
     } catch (error) {
       logger.error(error);
       reply.code(500);
-      return `Error getting the file: ${error}.`;
+      return `Error reading pixel data: ${error}`;
     }
   });
 
@@ -183,42 +167,22 @@ module.exports = function routes(server, opts, done) {
     const seriesUid = req.query.seriesUID;
     const imageUid = req.query.objectUID;
     if (!studyUid || !seriesUid || !imageUid) {
-      const msg = `Error missing parameters.`;
+      const msg = 'Error missing parameters.';
       logger.error(msg);
       reply.code(500);
       return msg;
     }
-    const storagePath = config.get('storagePath');
-    const studyPath = path.join(storagePath, studyUid);
-    const pathname = path.join(studyPath, imageUid);
+
+    const s3Key = `${studyUid}/${imageUid}`;
 
     try {
-      await utils.fileExists(pathname);
-    } catch (error) {
-      logger.error(error);
-      const msg = `file not found ${pathname}`;
-      reply.code(500);
-      return msg;
-    }
-
-    try {
-      await utils.compressFile(pathname, studyPath);
-    } catch (error) {
-      logger.error(error);
-      const msg = `failed to compress ${pathname}`;
-      reply.code(500);
-      return msg;
-    }
-
-    // read file from file system
-    try {
-      const data = await fs.promises.readFile(pathname);
-      reply.header('Content-Type', 'application/dicom+json');
+      const data = await s3.getObjectBuffer(dataBucket, s3Key);
+      reply.header('Content-Type', 'application/dicom');
       return data;
     } catch (error) {
-      const msg = `Error getting the file: ${error}.`;
-      logger.error(msg);
-      reply.setCode(500);
+      logger.error(error);
+      const msg = `Object not found: ${s3Key}`;
+      reply.code(404);
       return msg;
     }
   });

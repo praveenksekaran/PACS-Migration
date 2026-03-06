@@ -3,7 +3,7 @@ import { volumeLoader, cornerstoneStreamingImageVolumeLoader } from '@cornerston
 export function registerVolumeLoader(): void {
   volumeLoader.registerVolumeLoader(
     'cornerstoneStreamingImageVolume',
-    cornerstoneStreamingImageVolumeLoader
+    cornerstoneStreamingImageVolumeLoader as unknown as Parameters<typeof volumeLoader.registerVolumeLoader>[1]
   )
 }
 

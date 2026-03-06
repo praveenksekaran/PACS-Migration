@@ -41,7 +41,7 @@ export default defineConfig({
     format: 'es',
   },
   build: {
-    outDir: '../dicomweb-viewer/public',
+    outDir: 'dist',
     emptyOutDir: true,
     rollupOptions: {
       output: {

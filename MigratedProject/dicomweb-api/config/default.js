@@ -1,34 +1,5 @@
 const config = {
 
-  source: {
-    aet: "DICOMWEB_PACS",
-    ip: "127.0.0.1",
-    port: "8888"
-  },
-  peers: [
-    {
-      aet: "CONQUESTSRV1",
-      ip: "127.0.0.1",
-      port: "5678"
-    }],
-
-  /*
-  Supported Transfer Syntaxes:
-  1.2.840.10008.1.2       Implicit VR Endian: Default Transfer Syntax for DICOM
-  1.2.840.10008.1.2.1     Explicit VR Little Endian
-  1.2.840.10008.1.2.2     Explicit VR Big Endian
-  1.2.840.10008.1.2.4.50  JPEG Baseline (Process 1) - Lossy JPEG 8-bit Image Compression
-  1.2.840.10008.1.2.4.51  JPEG Baseline (Processes 2 & 4) - Lossy JPEG 12-bit Image Compression
-  1.2.840.10008.1.2.4.70  JPEG Lossless, Nonhierarchical, First-Order Prediction
-  1.2.840.10008.1.2.4.80  JPEG-LS Lossless Image Compression   <-- recommended
-  1.2.840.10008.1.2.4.81  JPEG-LS Lossy (Near-Lossless) Image Compression
-  1.2.840.10008.1.2.4.90  JPEG 2000 Image Compression (Lossless Only)
-  1.2.840.10008.1.2.4.91  JPEG 2000 Image Compression
-  1.2.840.10008.1.2.5     RLE Lossless
-  */
-
-  // transfer syntax used for transmission via wado and proposed to peers
-  transferSyntax: '1.2.840.10008.1.2',
   logDir: './logs',
   storagePath: './data',
 
@@ -40,8 +11,22 @@ const config = {
 
   qidoMinChars: 0,
   qidoAppendWildcard: true,
-  permissiveMode: true,
-  verboseLogging: false,
+
+  // AWS — S3 buckets for DICOM import (drop zone) and permanent storage
+  aws: {
+    region: 'ap-south-2',
+    importBucket: 'dicomweb-import',
+    dataBucket: 'dicomweb-data',
+  },
+
+  // PostgreSQL connection — override in config/local.js or via NODE_CONFIG env var
+  db: {
+    host: 'dicomwebmig.clacs4oiaso2.ap-southeast-2.rds.amazonaws.com',
+    port: 5432,
+    database: 'dicomweb',
+    user: 'postgres',
+    password: 'i2Y43jGm#YM92bh',
+  },
 };
 
 module.exports = config;

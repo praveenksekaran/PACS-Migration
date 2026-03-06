@@ -1,0 +1,44 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - button "File" [ref=e6] [cursor=pointer]
+  - generic [ref=e7]:
+    - button "Q/R" [ref=e8]
+    - button "WL" [ref=e10]
+    - button "Pan" [ref=e11]
+    - button "Zoom" [ref=e12]
+    - button "Flip H" [ref=e14]
+    - button "Flip V" [ref=e15]
+    - button "Invert" [ref=e16]
+    - button "Annotation" [ref=e18]
+  - generic [ref=e22]:
+    - generic [ref=e24]:
+      - img
+    - button "MPR" [ref=e27]
+  - generic [ref=e28]: "QIDO-RS Completed: Found 0 Series"
+  - generic [ref=e30]:
+    - heading "Query / Retrieve" [level=2] [ref=e31]
+    - generic [ref=e32]:
+      - combobox [ref=e33]:
+        - option "Patient Name" [selected]
+        - option "Patient ID"
+      - textbox "Search…" [ref=e34]
+      - button "Find" [active] [ref=e35]
+    - table [ref=e36]:
+      - rowgroup [ref=e37]:
+        - row "Patient Name Patient ID Study UID Modality Body Part Series UID Series Description" [ref=e38]:
+          - columnheader [ref=e39]
+          - columnheader "Patient Name" [ref=e40]
+          - columnheader "Patient ID" [ref=e41]
+          - columnheader "Study UID" [ref=e42]
+          - columnheader "Modality" [ref=e43]
+          - columnheader "Body Part" [ref=e44]
+          - columnheader "Series UID" [ref=e45]
+          - columnheader "Series Description" [ref=e46]
+      - rowgroup
+    - generic [ref=e47]:
+      - button "Get Selected" [ref=e48]
+      - button "Get All" [ref=e49]
+      - button "Cancel" [ref=e50]
+```

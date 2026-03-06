@@ -67,7 +67,7 @@ vi.mock('@cornerstonejs/tools', () => ({
   WindowLevelTool: { toolName: 'Wwwl' },
   PanTool: { toolName: 'Pan' },
   ZoomTool: { toolName: 'Zoom' },
-  StackScrollMouseWheelTool: { toolName: 'StackScrollMouseWheel' },
+  StackScrollTool: { toolName: 'StackScroll' },
   Enums: { MouseBindings: { Primary: 1, Secondary: 2, Auxiliary: 4 } },
 }))
 
@@ -167,9 +167,9 @@ describe('CornerstoneViewport', () => {
     expect(mockToolGroupAddTool).toHaveBeenCalledWith('Zoom')
   })
 
-  it('adds StackScrollMouseWheelTool to the ToolGroup', () => {
+  it('adds StackScrollTool to the ToolGroup', () => {
     render(<CornerstoneViewport />)
-    expect(mockToolGroupAddTool).toHaveBeenCalledWith('StackScrollMouseWheel')
+    expect(mockToolGroupAddTool).toHaveBeenCalledWith('StackScroll')
   })
 
   it('adds the viewport to the ToolGroup', () => {
@@ -177,10 +177,10 @@ describe('CornerstoneViewport', () => {
     expect(mockToolGroupAddViewport).toHaveBeenCalledTimes(1)
   })
 
-  it('activates StackScrollMouseWheel unconditionally on mount', () => {
+  it('activates StackScroll unconditionally on mount', () => {
     render(<CornerstoneViewport />)
     expect(mockToolGroupSetToolActive).toHaveBeenCalledWith(
-      'StackScrollMouseWheel', expect.objectContaining({ bindings: [] })
+      'StackScroll', expect.objectContaining({ bindings: [] })
     )
   })
 

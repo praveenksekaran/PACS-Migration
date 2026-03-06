@@ -6,7 +6,7 @@ import {
   WindowLevelTool,
   PanTool,
   ZoomTool,
-  StackScrollMouseWheelTool,
+  StackScrollTool,
   Enums as ToolsEnums,
 } from '@cornerstonejs/tools'
 import type { Types } from '@cornerstonejs/core'
@@ -36,7 +36,7 @@ export default function CornerstoneViewport() {
     addTool(WindowLevelTool)
     addTool(PanTool)
     addTool(ZoomTool)
-    addTool(StackScrollMouseWheelTool)
+    addTool(StackScrollTool)
 
     // Create rendering engine and viewport
     const engine = new RenderingEngine(ENGINE_ID)
@@ -54,9 +54,9 @@ export default function CornerstoneViewport() {
       toolGroup.addTool(WindowLevelTool.toolName)
       toolGroup.addTool(PanTool.toolName)
       toolGroup.addTool(ZoomTool.toolName)
-      toolGroup.addTool(StackScrollMouseWheelTool.toolName)
+      toolGroup.addTool(StackScrollTool.toolName)
       // StackScroll is always active (mouse-wheel, no button conflict)
-      toolGroup.setToolActive(StackScrollMouseWheelTool.toolName, { bindings: [] })
+      toolGroup.setToolActive(StackScrollTool.toolName, { bindings: [] })
       toolGroup.addViewport(VIEWPORT_ID, ENGINE_ID)
     }
 
@@ -111,8 +111,9 @@ export default function CornerstoneViewport() {
       const camera = viewport.getCamera()
       viewport.setCamera({ flipVertical: !camera.flipVertical })
     } else if (pendingAction === 'Invert') {
-      const props = viewport.getProperties()
-      viewport.setProperties({ invert: !props.invert })
+      const stackViewport = viewport as Types.IStackViewport
+      const props = stackViewport.getProperties()
+      stackViewport.setProperties({ invert: !props.invert })
     }
     viewport.render()
     clearPendingAction()

@@ -1,0 +1,43 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - button "File" [ref=e6] [cursor=pointer]
+  - generic [ref=e7]:
+    - button "Q/R" [active] [ref=e8]
+    - button "WL" [ref=e10]
+    - button "Pan" [ref=e11]
+    - button "Zoom" [ref=e12]
+    - button "Flip H" [ref=e14]
+    - button "Flip V" [ref=e15]
+    - button "Invert" [ref=e16]
+    - button "Annotation" [ref=e18]
+  - generic [ref=e22]:
+    - generic [ref=e24]:
+      - img
+    - button "MPR" [ref=e27]
+  - generic [ref=e29]:
+    - heading "Query / Retrieve" [level=2] [ref=e30]
+    - generic [ref=e31]:
+      - combobox [ref=e32]:
+        - option "Patient Name" [selected]
+        - option "Patient ID"
+      - textbox "Search…" [ref=e33]
+      - button "Find" [ref=e34]
+    - table [ref=e35]:
+      - rowgroup [ref=e36]:
+        - row "Patient Name Patient ID Study UID Modality Body Part Series UID Series Description" [ref=e37]:
+          - columnheader [ref=e38]
+          - columnheader "Patient Name" [ref=e39]
+          - columnheader "Patient ID" [ref=e40]
+          - columnheader "Study UID" [ref=e41]
+          - columnheader "Modality" [ref=e42]
+          - columnheader "Body Part" [ref=e43]
+          - columnheader "Series UID" [ref=e44]
+          - columnheader "Series Description" [ref=e45]
+      - rowgroup
+    - generic [ref=e46]:
+      - button "Get Selected" [ref=e47]
+      - button "Get All" [ref=e48]
+      - button "Cancel" [ref=e49]
+```

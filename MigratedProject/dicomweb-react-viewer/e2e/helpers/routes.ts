@@ -9,7 +9,7 @@ import {
   makeWadoMetadata,
 } from '../fixtures/dicom'
 
-const API_URL = 'http://localhost:5001'
+const API_URL = 'http://3.27.26.186:5001'
 
 // ── App-config mocking ────────────────────────────────────────────────────────
 
