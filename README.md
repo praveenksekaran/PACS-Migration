@@ -82,6 +82,7 @@ The migrated system separates every concern into an independently deployable clo
 
 <img width="806" height="305" alt="NewDiagram" src="https://github.com/user-attachments/assets/1ebd8a5a-7601-4831-baa1-58ed452a716d" />
 
+Note: AWS Gateway and Cloudfront and not implemented in this version. 
 
 ```
                         Browser
